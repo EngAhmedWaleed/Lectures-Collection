@@ -8,10 +8,10 @@
 \labsec{sec1.1}
 
 \begin{description}
-	\item[Analysis of linear continuous system] analysis of a system means simply check the goodness of its measure of performance.
+	\item[Analysis of linear continuous system] analysis of a system means simply checking the goodness of its measure of performance.
 Analysis could be done in two different ways:
 \begin{itemize}
-	\item In the lab: by putting test input to the system and check the output how it satisfies the measure of performance.
+	\item In the lab: by putting test input to the system and checking if the output satisfies the measure of performance.
 	\item Using analytical techniques: which is our concern in this course.
 \end{itemize}
 	\item[The first step] is to make a mathematical model to the system. \\[+1mm]
@@ -23,7 +23,7 @@ Analysis could be done in two different ways:
 	    $\ F = m\ddot{x} + \mu\dot{x} + kx$
     		}
 	}\\[-2mm]
-	\item[Then] defining the measure of performance and study how analytically can check these measure of performance.
+	\item[Then] defining the measure of performance and studying how we can check these measure of performance.
 \end{description}
 
 \begin{marginfigure}[-3cm]
@@ -39,7 +39,8 @@ Analysis could be done in two different ways:
 		\caption[Spring problem: block diagram]{Since D is an operator (can't have a value),  the transfer function is obtained by the Laplace transform of the first relation.}
 		\labfig{dynamicsSystemBlockDiagram}
 \end{figure}
- \leavevmode\\[-1.3cm]
+\todo{Switch cases to match Laplase}
+\leavevmode\\[-1.3cm]
 
 \begin{description}
 	\item[Transfer function] ratio between Laplace transform of the output and Laplace transform of the input, assuming zero initial conditions.
@@ -70,17 +71,18 @@ A control system is an interconnection of components forming a system configurat
 \end{figure}
 
 \section{Mathematical Model}
-Any linear continuous system can be represented either by a linear algebraic equation of an ordinary differential equation such as:\\[-4mm]
+Any linear continuous system can be represented either by a linear algebraic equation or an ordinary differential equation such as:\\[-4mm]
 
 %https://tex.stackexchange.com/questions/195774/how-to-right-align-any-line-or-word-in-a-paragraph-in-any-documentclass
 \hspace*{\fill} $(mD^2 + \mu D + k)\ x(t) = y(t)$\\[-4mm]
 
 Solving the differential equation using Laplace transform assuming zero initial conditions made it possible to get the transfer function.
 
+\todo{Add copyrights to lec.}
 \section{Block Diagram Reduction}
 
 \begin{margintable}[-0.5cm]
-\caption[Canonical form: table]{Terminology}
+\caption[Canonical form of feedback control system]{Terminology}
 \labtab{canonicalTable}
 \centering
 \tiny
@@ -91,7 +93,7 @@ Solving the differential equation using Laplace transform assuming zero initial 
 	        E &: & actuating / error signal.\\
 	        G &: & control element and controlled system.\\
 	        C &: & controlled variable / actual output.\\
-	        H &: & feedback element.\\
+	        H &: & feedback / backward transfer element.\\
 	        B &: & primary feedback.\\
 	        s &: & summation point.\\
 	        t &: & takeoff point.\\
@@ -105,8 +107,10 @@ Solving the differential equation using Laplace transform assuming zero initial 
 		\caption[Canonical form: block diagram]{Canonical feedback loop.}
 		\labfig{canonicalBlockDiagram}
 \end{marginfigure}
-
-Control systems require the arithmetic manipulation in order to obtain the overall transfer function and this is the start point for the analytical analysis of the system.\\
+\todo{negative feedback}
+A Block Diagram is a shorthand pictorial representation of the cause-and-effect relationship of a system.
+Control systems require the arithmetic manipulation in order to obtain the overall transfer function and
+this is the start point for the analysis of the system.\\
 
 \begin{tabular}{r p{0.1cm} c}
 Cascade connection & : &\\
@@ -115,10 +119,37 @@ Parallel connection & : &\\
 					&&  \tiny\ \ \ \includegraphics[width=0.6\textwidth]{lec1/Parallel Both}\\
 					&& \\
 Summation point & : &\\
-					&&  \multicolumn{1}{l}{some definition ...}\\
+					&&  \multicolumn{1}{p{6.5cm}}{\scriptsize a small circle, with plus or minus sign associated with the inputs,
+					and the output is the algebraic sum of the inputs.}\\
 Take-off point & : &\\
-					&&   \multicolumn{1}{l}{some definition ...}\\
+					&&   \multicolumn{1}{p{6.5cm}}{\scriptsize a takeoff (or pickoff) point is used in order 
+					to have the same signal input to more than one block.}\\
 \end{tabular}
 
 \subsection[Overall transfer function]{Overall transfer function (feedback loop elimination):}
-El Hamd Lelah\ldots
+Applying reduction techniques mentioned above, we can obtain the overall transfer function of \reffig{canonicalBlockDiagram} 
+
+\begin{tabular}{r c l r}
+	\multicolumn{2}{c}{$@\ s:$} & $E = R - B$ & \note{summation point}\\
+			&$\because  $& $B = CH$ & \note{block}\\
+			&$\therefore$& $E = R - CH$ &\\
+			&$\because  $& $C = GE$ & \note{block}\\
+			&$\therefore$& $C = G(R-CH)$ &\\
+			&& $C + CGH = GR$ & \\
+			&& $C(1+GH) = GR$ & \\
+			&&&
+			\fbox{
+			    \parbox{1.7cm}{
+			    $\frac{C}{R} = \frac{G}{(1+GH)}$
+		    		}
+			}\\[-2mm]
+\end{tabular}
+
+\begin{marginfigure}[-1cm]
+		\includegraphics{lec1/Reduction Example Formula}
+		\caption[Overall transfer function: block diagram]{Feedback loop equivalent}
+		\labfig{OverallTransferBlockDiagram}
+\end{marginfigure}
+
+$End\ ?$
+\todo{Missed super position in multi i/p and postponed the mathematical models}

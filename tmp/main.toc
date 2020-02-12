@@ -22,8 +22,8 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {1.4}Block Diagram Reduction}{2}{section.1.4}%
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Overall transfer function}{2}{section*.13}%
+\contentsline {subsection}{\nonumberline Overall transfer function}{2}{section*.15}%
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Appendix}{3}{part*.15}%
+\contentsline {part}{\nonumberline Appendix}{3}{part*.19}%
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\numberline {A}Table of Laplace Transforms}{4}{appendix.A}%

@@ -75,6 +75,11 @@
 	\scriptsize \href{#1}{\copyright}
 }
 
+% Link copyrighted materials
+\newcommand{\note}[1]{
+	\scriptsize{\hspace*{\fill} (#1)} \normalsize
+}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -134,11 +139,11 @@
 
 \tableofcontents % Output the table of contents
 
-\listoffigures % Output the list of figures
+%\listoffigures % Output the list of figures
 
 % Comment both of the following lines to have the LOF and the LOT on different pages
-\let\cleardoublepage\bigskip
-\let\clearpage\bigskip
+%\let\cleardoublepage\bigskip
+%\let\clearpage\bigskip
 
 \listoftables % Output the list of tables
 

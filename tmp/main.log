@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.12)  12 FEB 2020 09:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.12)  12 FEB 2020 15:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -2285,79 +2285,82 @@ Package glossaries Info: Writing glossary file main.glo on input line 62.
 
 Package nomencl Info: Writing nomenclature file main.nlo on input line 64.
 LaTeX Font Info:    Trying to load font information for T1+zpllf on input line 
-80.
+85.
 ("D:\MiKTeX 2.9\tex/latex/newpx\t1zpllf.fd"
 File: t1zpllf.fd 2015/01/17 v1.0 font definition file for T1/zpl/lf
 )
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 80.
+(Font)              scaled to size 9.70001pt on input line 85.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (main.aux)
+ (main.aux
+
+LaTeX Warning: Label `tab:canonicalTable' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 80.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 85.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 80.
-
-("D:\MiKTeX 2.9\tex/latex/newpx\omlnpxmi.fd"
+ 85.
+ ("D:\MiKTeX 2.9\tex/latex/newpx\omlnpxmi.fd"
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 85.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-80.
+85.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\unpxexa.fd"
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 85.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 80.
+ 85.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\lmsnpxsy.fd"
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 85.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 80.
+e 85.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\lmxnpxexx.fd"
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-Package scrbase Info: activating english \contentsname on input line 80.
-Package scrbase Info: activating english \listfigurename on input line 80.
-Package scrbase Info: activating english \listtablename on input line 80.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+Package scrbase Info: activating english \contentsname on input line 85.
+Package scrbase Info: activating english \listfigurename on input line 85.
+Package scrbase Info: activating english \listtablename on input line 85.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 80.
-LaTeX Info: Redefining \microtypecontext on input line 80.
+LaTeX Info: Redefining \selectfont on input line 85.
+LaTeX Info: Redefining \microtypecontext on input line 85.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 80.
+LaTeX Info: Redefining \showhyphens on input line 85.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -2384,7 +2387,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \AtBeginShipoutBox=\box150
-Package hyperref Info: Link coloring ON on input line 80.
+Package hyperref Info: Link coloring ON on input line 85.
 
 ("D:\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -2398,10 +2401,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \c@section@level=\count572
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
-LaTeX Info: Redefining \Ref on input line 80.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \Ref on input line 85.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -2525,8 +2528,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 80.
-Package biblatex Info: Reference segment=0 on input line 80.
+Package biblatex Info: Reference section=0 on input line 85.
+Package biblatex Info: Reference segment=0 on input line 85.
 
 
 Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
@@ -2579,67 +2582,67 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 44.9403pt
 (typearea)              \baselineskip   = 12.84009pt
-(typearea)              on input line 110.
+(typearea)              on input line 115.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 110.
+(typearea)             dimensions of LaTeX on input line 115.
 LaTeX Font Info:    Font shape `T1/zpllf/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 112.
+(Font)              scaled to size 9.70001pt on input line 117.
 LaTeX Font Info:    Font shape `T1/zpllf/b/n' will be
-(Font)              scaled to size 13.968pt on input line 112.
+(Font)              scaled to size 13.968pt on input line 117.
 LaTeX Font Info:    Trying to load font information for T1+qhv on input line 11
-2.
+7.
 ("D:\MiKTeX 2.9\tex/latex/tex-gyre\t1qhv.fd"
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.02084pt on input line 112.
+(Font)              scaled to size 9.02084pt on input line 117.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 9.02084pt on input line 112.
+(Font)              scaled to size 9.02084pt on input line 117.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 18.70923pt on input line 112.
+(Font)              scaled to size 18.70923pt on input line 117.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 13.968pt on input line 112.
+(Font)              scaled to size 13.968pt on input line 117.
 LaTeX Font Info:    Trying to load font information for OT1+zpltlf on input lin
-e 112.
+e 117.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\ot1zpltlf.fd"
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 13.968pt on input line 112.
+(Font)              scaled to size 13.968pt on input line 117.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.18501pt on input line 112.
+(Font)              scaled to size 10.18501pt on input line 117.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.663pt on input line 112.
+(Font)              scaled to size 7.663pt on input line 117.
 LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
-112.
+117.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\unpxmia.fd"
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
-112.
+117.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\unpxsym.fd"
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
-112.
+117.
 
 ("D:\MiKTeX 2.9\tex/latex/newpx\unpxsyc.fd"
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 13.968pt on input line 112.
+(Font)              scaled to size 13.968pt on input line 117.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.18501pt on input line 112.
+(Font)              scaled to size 10.18501pt on input line 117.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.663pt on input line 112.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112
+(Font)              scaled to size 7.663pt on input line 117.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 117
 .
 
 ("D:\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
@@ -2648,7 +2651,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("D:\MiKTeX 2.9\tex/latex/microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112
+LaTeX Font Info:    Trying to load font information for U+msb on input line 117
 .
 
 ("D:\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -2658,13 +2661,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 11
-2.
+7.
 
 ("D:\MiKTeX 2.9\tex/latex/bera\t1fvm.fd"
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 12.24008pt on input line 112.
+(Font)              scaled to size 12.24008pt on input line 117.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -3155,9 +3158,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 44.9403pt
 (typearea)              \baselineskip   = 12.84009pt
-(typearea)              on input line 112.
+(typearea)              on input line 117.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 112.
+(typearea)             dimensions of LaTeX on input line 117.
  (lectures/preface.tex
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
 (Font)              scaled to size 20.11783pt on input line 1.
@@ -3189,24 +3192,24 @@ Package tocbasic Warning: Usage of deprecated command `\iftocfeature'.
 (tocbasic)                The command has been renamed because of a
 (tocbasic)                recommendation of The LaTeX Project Team.
 (tocbasic)                Please replace `\iftocfeature' by `\Iftocfeature' on 
-input line 136.
+input line 141.
 
 
 Package tocbasic Warning: Usage of deprecated command `\iftocfeature'.
 (tocbasic)                The command has been renamed because of a
 (tocbasic)                recommendation of The LaTeX Project Team.
 (tocbasic)                Please replace `\iftocfeature' by `\Iftocfeature' on 
-input line 136.
+input line 141.
 
 
 Package tocbasic Warning: Usage of deprecated command `\iftocfeature'.
 (tocbasic)                The command has been renamed because of a
 (tocbasic)                recommendation of The LaTeX Project Team.
 (tocbasic)                Please replace `\iftocfeature' by `\Iftocfeature' on 
-input line 136.
+input line 141.
 
 LaTeX Font Info:    Font shape `T1/zpllf/m/sl' will be
-(Font)              scaled to size 9.70001pt on input line 136.
+(Font)              scaled to size 9.70001pt on input line 141.
 \openout4 = `main.mw'.
 
 [2
@@ -3222,21 +3225,21 @@ Package tocbasic Warning: Usage of deprecated command `\iftocfeature'.
 (tocbasic)                The command has been renamed because of a
 (tocbasic)                recommendation of The LaTeX Project Team.
 (tocbasic)                Please replace `\iftocfeature' by `\Iftocfeature' on 
-input line 136.
+input line 141.
 
-Package tocbasic Info: character protrusion at toc deactivated on input line 13
-6.
+Package tocbasic Info: character protrusion at toc deactivated on input line 14
+1.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 10.82501pt on input line 136.
+(Font)              scaled to size 10.82501pt on input line 141.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 11.64001pt on input line 136.
+(Font)              scaled to size 11.64001pt on input line 141.
 LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
-(Font)              scaled to size 11.64001pt on input line 136.
+(Font)              scaled to size 11.64001pt on input line 141.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zpllf/b/sc' will be
-(Font)              scaled to size 11.64001pt on input line 136.
+(Font)              scaled to size 11.64001pt on input line 141.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3248,16 +3251,10 @@ Package microtype Info: Character `029' is missing
 ] (main.mw)
 \openout4 = `main.mw'.
 
-Package tocbasic Info: character protrusion at lof deactivated on input line 13
-7.
- (main.lof)
-\tf@lof=\write25
-\openout4 = `main.lof'.
-
 Package tocbasic Info: character protrusion at lot deactivated on input line 14
-3.
+8.
  (main.lot)
-\tf@lot=\write26
+\tf@lot=\write25
 \openout4 = `main.lot'.
 
 
@@ -3266,7 +3263,7 @@ Package scrbase Warning: Usage of deprecated command `\ifthispageodd'.
 (scrbase)                The command has been renamed because of a
 (scrbase)                recommendation of The LaTeX Project Team.
 (scrbase)                Please replace `\ifthispageodd' by `\Ifthispageodd' on
- input line 151.
+ input line 156.
 
 \openout4 = `main.mw'.
 
@@ -3355,7 +3352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--26
 
  []
 
-<images/lec1/Dynamics.jpg, id=131, 425.82617pt x 158.00206pt>
+<images/lec1/Dynamics.jpg, id=121, 425.82617pt x 158.00206pt>
 File: images/lec1/Dynamics.jpg Graphic file (type jpg)
 <use images/lec1/Dynamics.jpg>
 Package pdftex.def Info: images/lec1/Dynamics.jpg  used on input line 30.
@@ -3371,48 +3368,50 @@ File: ts1zpllf.fd 2015/01/18 v1.0 fd file for TS1/zpllf
 )
 LaTeX Font Info:    Font shape `TS1/zpllf/m/n' will be
 (Font)              scaled to size 6.79001pt on input line 31.
-<images/lec1/Better Block Diagram.png, id=133, 557.4426pt x 298.4751pt>
+<images/lec1/Better Block Diagram.png, id=123, 557.4426pt x 298.4751pt>
 File: images/lec1/Better Block Diagram.png Graphic file (type png)
 <use images/lec1/Better Block Diagram.png>
 Package pdftex.def Info: images/lec1/Better Block Diagram.png  used on input li
 ne 38.
 (pdftex.def)             Requested size: 197.88074pt x 105.95256pt.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 42.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 35--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
 LaTeX Font Info:    Font shape `T1/zpllf/b/n' will be
-(Font)              scaled to size 11.64001pt on input line 54.
-<images/lec1/Open-loop control system.png, id=134, 388.45125pt x 59.22125pt>
+(Font)              scaled to size 11.64001pt on input line 55.
+<images/lec1/Open-loop control system.png, id=124, 388.45125pt x 59.22125pt>
 File: images/lec1/Open-loop control system.png Graphic file (type png)
 <use images/lec1/Open-loop control system.png>
 Package pdftex.def Info: images/lec1/Open-loop control system.png  used on inpu
-t line 57.
+t line 58.
 (pdftex.def)             Requested size: 124.8226pt x 19.02979pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<images/lec1/Closed-loop control system.png, id=136, 765.86125pt x 156.585pt>
+<images/lec1/Closed-loop control system.png, id=126, 765.86125pt x 156.585pt>
 File: images/lec1/Closed-loop control system.png Graphic file (type png)
 <use images/lec1/Closed-loop control system.png>
 Package pdftex.def Info: images/lec1/Closed-loop control system.png  used on in
-put line 67.
+put line 68.
 (pdftex.def)             Requested size: 243.54973pt x 49.79521pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
@@ -3429,39 +3428,45 @@ png>] (main.mw)
 \openout4 = `main.mw'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 4.85pt on input line 86.
-<images/lec1/Canonical Block Diagram.png, id=150, 677.8926pt x 294.3798pt>
+(Font)              scaled to size 4.85pt on input line 88.
+<images/lec1/Canonical Block Diagram.png, id=145, 677.8926pt x 294.3798pt>
 File: images/lec1/Canonical Block Diagram.png Graphic file (type png)
 <use images/lec1/Canonical Block Diagram.png>
 Package pdftex.def Info: images/lec1/Canonical Block Diagram.png  used on input
- line 104.
+ line 106.
 (pdftex.def)             Requested size: 140.55148pt x 61.03549pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
 
-<images/lec1/Series Both.png, id=151, 760.8425pt x 107.40125pt>
+<images/lec1/Series Both.png, id=146, 760.8425pt x 107.40125pt>
 File: images/lec1/Series Both.png Graphic file (type png)
 <use images/lec1/Series Both.png>
-Package pdftex.def Info: images/lec1/Series Both.png  used on input line 113.
+Package pdftex.def Info: images/lec1/Series Both.png  used on input line 117.
 (pdftex.def)             Requested size: 182.66397pt x 25.785pt.
-<images/lec1/Parallel Both.png, id=152, 756.8275pt x 131.49126pt>
+<images/lec1/Parallel Both.png, id=147, 756.8275pt x 131.49126pt>
 File: images/lec1/Parallel Both.png Graphic file (type png)
 <use images/lec1/Parallel Both.png>
-Package pdftex.def Info: images/lec1/Parallel Both.png  used on input line 115.
+Package pdftex.def Info: images/lec1/Parallel Both.png  used on input line 119.
 
 (pdftex.def)             Requested size: 182.6701pt x 31.7371pt.
 
-Overfull \hbox (15.17683pt too wide) in paragraph at lines 111--122
+Overfull \hbox (15.17683pt too wide) in paragraph at lines 115--128
 [][] 
  []
 
+<images/lec1/Reduction Example Formula.png, id=150, 387.3672pt x 133.9404pt>
+File: images/lec1/Reduction Example Formula.png Graphic file (type png)
+<use images/lec1/Reduction Example Formula.png>
+Package pdftex.def Info: images/lec1/Reduction Example Formula.png  used on inp
+ut line 149.
+(pdftex.def)             Requested size: 140.55739pt x 48.60068pt.
 )
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -3469,8 +3474,9 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout4 = `main.mw'.
 
-[2 <./images/lec1/Canonical Block Diagram.png> <./images/lec1/Series Both.png> 
-<./images/lec1/Parallel Both.png>] (main.mw)
+[2 <./images/lec1/Canonical Block Diagram.png> <./images/lec1/Reduction Example
+ Formula.png> <./images/lec1/Series Both.png> <./images/lec1/Parallel Both.png>
+] (main.mw)
 \openout4 = `main.mw'.
 
 
@@ -3511,16 +3517,16 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 
 part without number
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 22.44386pt on input line 159.
+(Font)              scaled to size 22.44386pt on input line 164.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 24.13362pt on input line 159.
+(Font)              scaled to size 24.13362pt on input line 164.
 LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
-(Font)              scaled to size 24.13362pt on input line 159.
+(Font)              scaled to size 24.13362pt on input line 164.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/m/sc/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zpllf/b/sc' will be
-(Font)              scaled to size 24.13362pt on input line 159.
+(Font)              scaled to size 24.13362pt on input line 164.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/b/sc/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -3587,75 +3593,24 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
  []
 
 )
-
-Package glossaries Warning: No \printglossary or \printglossaries found. 
-(Remove \makeglossaries if you don't want any glossaries.) 
-This document will not have a glossary.
-
 \openout4 = `main.mw'.
 
-[4
+ [4
 
 
 
 ] (main.mw)
 \openout4 = `main.mw'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
- (main.aux
-\openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
 
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
+(main.aux
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -3821,8 +3776,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
 \openout4 = `main.mw'.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 196.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 \openout4 = `main.mw'.
 
 \openout4 = `main.mw'.
@@ -3840,17 +3799,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout4 = `main.toc'.
 
-\openout4 = `main.lof'.
-
 \openout4 = `main.lot'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51314 strings out of 481565
- 945979 string characters out of 2930434
- 2072071 words of memory out of 3000000
- 65417 multiletter control sequences out of 15000+200000
- 674375 words of font info for 196 fonts, out of 3000000 for 9000
+ 51452 strings out of 481565
+ 949286 string characters out of 2930434
+ 2083996 words of memory out of 3000000
+ 65556 multiletter control sequences out of 15000+200000
+ 674453 words of font info for 194 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,19n,122p,10162b,2014s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{D:/MiKTeX 2.9/fonts/enc
@@ -3865,9 +3822,9 @@ bols/msam10.pfb><D:/MiKTeX 2.9/fonts/type1/public/newpx/pxmiaX.pfb><D:/MiKTeX 2
 e/qhvb.pfb><D:/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplr.pfb><D:/MiKTeX 2.9/f
 onts/type1/public/newpx/zplb.pfb><D:/MiKTeX 2.9/fonts/type1/public/newpx/zplr.p
 fb><D:/MiKTeX 2.9/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (8 pages, 296857 bytes).
+Output written on main.pdf (8 pages, 309344 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 35040 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 35045 words of extra memory for PDF output out of 35830 (max. 10000000)
 
