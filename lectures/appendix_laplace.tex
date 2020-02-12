@@ -2,46 +2,53 @@
 \chapter{Table of Laplace Transforms}
 \labch{laplace}
 
+\newcommand{\Laplace}[1]{\ensuremath{\mathcal{L}{\left[#1\right]}}}
+\newcommand{\row}[2]{&\\[-1mm] $#1$ & $#2$\\ &\\[-1mm]}
+
 \begin{description}
 \item[Remember] that we consider all functions as defined only on $t \geq 0$.
 \end{description}
 
-\begin{margintable}[-0.315cm]
-\caption[Canonical form of feedback control system]{Terminology}
-\labtab{canonicalTable}
+\begin{margintable}[-0.312cm]
+\caption[Laplace transform theorems]{Theorems}
+\labtab{laplaceSpecificTable}
 \centering
 \tiny
- 	\begin{tabular}{|c c l|}
+ 	\begin{tabular}{|l | l|}
 	        \hline
-	        \multicolumn{3}{c}{}\\[-1em]
-	        R &: & reference input / desired output response.\\
-	        E &: & actuating / error signal.\\
-	        G &: & control element and controlled system.\\
-	        C &: & controlled variable / actual output.\\
-	        H &: & feedback / backward transfer element.\\
-	        B &: & primary feedback.\\
-	        s &: & summation point.\\
-	        t &: & takeoff point.\\
-	        \multicolumn{3}{c}{}\\[-1em]
+	        \multicolumn{2}{c}{}\\[-1em]
+	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)e^{-st}dt}=F(s)$\\
+	        \multicolumn{2}{c}{}\\[-1em]
+	        \hline
+	        \row{f(at)}{}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
 	    \end{tabular}
 \end{margintable}
 
 \begin{table}[h]
-\caption[Laplace general transforms]{General}
+\caption[Laplace general transforms]{General transforms}
 \labtab{laplaceGeneralTable}
- 	\begin{tabular}{|c c l|}
+ 	\begin{tabular}{|l | l|}
 	        \hline
-	        \multicolumn{3}{c}{}\\[-1em]
-	        R &: & reference input / desired output response.\\
-	        E &: & actuating / error signal.\\
-	        G &: & control element and controlled system.\\
-	        C &: & controlled variable / actual output.\\
-	        H &: & feedback / backward transfer element.\\
-	        B &: & primary feedback.\\
-	        s &: & summation point.\\
-	        t &: & takeoff point.\\
-	        \multicolumn{3}{c}{}\\[-1em]
+	        \multicolumn{2}{c}{}\\[-1em]
+	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)e^{-st}dt}=F(s)$\\
+	        \multicolumn{2}{c}{}\\[-1em]
+	        \hline
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \row{R}{reference input / desired output response}
+	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
 	    \end{tabular}
 \end{table}
