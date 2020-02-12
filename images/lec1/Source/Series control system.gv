@@ -1,0 +1,13 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="R"];
+	c [shape=none, label="C"];
+	b [shape=box , label=<G<sub>1</sub>>]
+	d [shape=box , label=<G<sub>2</sub>>]
+	
+	a -> b [arrowsize = 0.5]
+	b -> d [arrowsize = 0.5]
+	d -> c [arrowsize = 0.5]
+
+}

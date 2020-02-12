@@ -1,0 +1,11 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="R"];
+	c [shape=none, label="C"];
+	b [shape=box , label=< <sub>G</sub><br/>_____<br /><br /><sup>1 + GH</sup><br />>]
+
+	a -> b [arrowsize = 0.5]
+	b -> c [arrowsize = 0.5]
+
+}

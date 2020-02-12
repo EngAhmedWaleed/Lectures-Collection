@@ -1,0 +1,11 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="Desired \no/p respose", fontsize = 11];
+	c [shape=none, label="o/p"];
+	b [shape=box , label="Process"]
+
+	a -> b [arrowsize = 0.5]
+	b -> c [arrowsize = 0.5]
+
+}

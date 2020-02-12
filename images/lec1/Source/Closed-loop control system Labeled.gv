@@ -1,0 +1,21 @@
+digraph {
+
+	rankdir=LR;
+	0 [shape=circle, fontcolor = white, width = .2, label = ""];
+	a [shape=none, label="R", fontsize = 11];
+	b [shape=box, label="G"];
+	d [shape=point, label = ""];
+	e [shape=none, label=C];
+	f [shape=box, label="H"];
+
+	{ rank = same; b; f }
+
+	a -> 0 [arrowsize = 0.5, tailport = e, headport = w, headlabel = "+", fontsize = 8]
+	0 -> b [arrowhead = none, tailport = e, headport = s, taillabel = "s", color = white]
+	0 -> b [arrowsize = 0.5, tailport = n, headport = w, label = "E"]
+	b -> d [arrowsize = 0.5, tailport = e, headport = n, arrowhead = none]
+	d -> e [arrowsize = 0.5, tailport = e, headport = w, taillabel = "t"]
+	d -> f [arrowsize = 0.5, tailport = s, headport = e]
+	f -> 0 [arrowhead = none, tailport = s, headport = s, label = "B\n\n", color = white]
+	f -> 0 [arrowsize = 0.5, tailport = w, headport = s, headlabel = "-"]
+}

@@ -1,0 +1,20 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="Desired \no/p respose", fontsize = 11];
+	b [shape=box, label="Comparison"];
+	c [shape=box, label="Controller"];
+	d [shape=box, label="Process"];
+	e [shape=none, label="o/p"];
+	f [shape=box, label="Measurment"];
+
+	{ rank = same; c; f }
+
+	a -> b [arrowsize = 0.5, tailport = n, headport = w]
+	b -> c [arrowsize = 0.5, tailport = e, headport = w]
+	c -> d [arrowsize = 0.5, tailport = e, headport = w]
+	d -> e [arrowsize = 0.5, tailport = e, headport = n]
+	e -> f [arrowsize = 0.5, tailport = s, headport = e]
+	f -> a [arrowsize = 0.5, tailport = w, headport = s]
+
+}

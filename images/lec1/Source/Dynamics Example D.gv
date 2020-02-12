@@ -1,0 +1,11 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="F\ninput"];
+	c [shape=none, label="X\noutput"];
+	b [shape=box , label=< <sub>1</sub> <br/>____________<br /> <br />  mD<sup>2</sup> + uD + k <br />>]
+
+	a -> b [arrowsize = 0.5]
+	b -> c [arrowsize = 0.5]
+
+}

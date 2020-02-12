@@ -1,0 +1,22 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="R"];
+	c [shape=none, label="C"];
+	b [shape=box , label=<G<sub>1</sub>>]
+	d [shape=box , label=<G<sub>2</sub>>]
+
+	x [shape=circle,color = white, label="R"];
+	y [shape=circle,color = white, label="C"];
+	z [shape=box , label=<G<sub>1</sub>G<sub>2</sub>>]
+	
+	a -> b [arrowsize = 0.5]
+	b -> d [arrowsize = 0.5]
+	d -> c [arrowsize = 0.5]
+
+	c -> x [arrowhead = vee, tailport = s, headport = n]
+
+	x -> z [arrowsize = 0.5]
+	z -> y [arrowsize = 0.5]
+
+}

@@ -1,0 +1,22 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=none, label="F\ninput"];
+	c [shape=none, label="X\noutput"];
+	b [shape=box , label=< <sub>1</sub> <br/>____________<br /> <br />  mD<sup>2</sup> + uD + k <br />>]
+	d [shape=none, label="f(s)"];
+	e [shape=none, label="x(s)"];
+	f [shape=box , label=< <sub>1</sub> <br/>____________<br /> <br />  ms<sup>2</sup> + us + k <br />>]
+
+	{ rank = same; d; a }
+	{ rank = same; f; b }
+	{ rank = same; e; c }
+
+	a -> b [arrowsize = 0.5]
+	b -> c [arrowsize = 0.5]
+	d -> f [arrowsize = 0.5]
+	f -> e [arrowsize = 0.5]
+
+	b -> f [arrowsize = 0.5, headlabel = "Laplace \nTransform ", minlen = 2, fontsize=9]
+	
+}

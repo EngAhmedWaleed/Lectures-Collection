@@ -1,0 +1,16 @@
+digraph {
+
+	rankdir=LR;
+	a [shape=circle,color = white, label="R"];
+	c [shape=circle,color = white, label="C"];
+	b [shape=box , label=<G<sub>1</sub>>]
+	d [shape=box , label=<G<sub>2</sub>>]
+
+	{ rank = same; b; d }
+	
+	a -> b [arrowsize = 0.5, tailport = n, headport = w]
+	a -> d [arrowsize = 0.5, tailport = s, headport = w]
+	b -> c [arrowsize = 0.5, tailport = e, headport = n]
+	d -> c [arrowsize = 0.5, tailport = e, headport = s]
+
+}
