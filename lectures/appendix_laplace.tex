@@ -14,7 +14,7 @@
 \item[Remember] that we consider all functions are defined only on $t \geq 0$.
 \end{description}
 
-\begin{margintable}[-0.312cm]
+\begin{margintable}[-0.262cm]
 \caption[Laplace transform theorems]{Theorems}
 \labtab{laplaceSpecificTable}
 \centering
@@ -74,7 +74,7 @@
 	        \row{\dfrac{d^n}{dt^n}}{s^{\boldsymbol{n}_{ote}\ \rightsquigarrow} \ \footnote{\tiny Despite being not convinced, it's mentioned in the doctor's notes.}}
 			\row{e^{-at}\sin \omega t}{\dfrac{\omega}{(s+a)^2+\omega^2}}
 			\row{e^{-at}\cos \omega t}{\dfrac{s+a}{(s+a)^2+\omega^2}}
-			\row{\displaystyle{\int_{-\infty}^t f(x)dx}}{\dfrac{1}{s}F(s)+\displaystyle{\int_{-\infty}^0 f(x)dx}}
+			\row{\displaystyle{\int_{-\infty}^t f(x)dx}}{\dfrac{1}{s}F(s)+\dfrac{1}{s}\displaystyle{\int_{-\infty}^0 f(x)dx}}
 	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
 	    \end{tabular}
@@ -85,6 +85,6 @@
 \item[Gamma function] which is defined as:\\
 	\hspace*{\fill}$\Gamma \left( p \right) = \int\limits_0^\infty {e^{ - x} x^{p - 1} dx}$\linkS{http://equplus.net/eqninfo/Equation-322.html}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
 	\normalsize If $n$ is a positive integer then,\\
-	\hspace*{\fill}$\Gamma \left( p \right) = p!$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+	\hspace*{\fill}$\Gamma \left( n+1 \right) = n!$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
 \end{description}
 

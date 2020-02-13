@@ -32,15 +32,14 @@ Analysis could be done in two different ways:
 		\labfig{dynamicsSystemFigure}
 \end{marginfigure}
 
- \leavevmode\\[-1.55cm]
+ \leavevmode\\[-1.6cm]
  \begin{figure}[hb]
 		\raggedleft
 		\includegraphics[width=0.65\textwidth]{lec1/Better Block Diagram}
 		\caption[Spring problem: block diagram]{Since D is an operator (can't have a value),  the transfer function is obtained by the Laplace transform of the first relation.}
 		\labfig{dynamicsSystemBlockDiagram}
 \end{figure}
-\todo{Switch cases to match Laplase}
-\leavevmode\\[-1.3cm]
+\leavevmode\\[-1.4cm]
 
 \begin{description}
 	\item[Transfer function] ratio between Laplace transform of the output and Laplace transform of the input, assuming zero initial conditions.
@@ -78,8 +77,7 @@ Any linear continuous system can be represented either by a linear algebraic equ
 
 Solving the differential equation using Laplace transform assuming zero initial conditions made it possible to get the transfer function.
 
-\todo{Add copyrights to lec.}
-\section{Block Diagram Reduction}
+\section[Block Diagram Reduction]{Block Diagram Reduction\linkS{http://imtiazhussainkalwar.weebly.com/feedback-control-systems-modeling-and-analysis.html}}
 
 \begin{margintable}[-0.5cm]
 \caption[Canonical form of feedback control system]{Terminology}
@@ -107,7 +105,7 @@ Solving the differential equation using Laplace transform assuming zero initial 
 		\caption[Canonical form: block diagram]{Canonical feedback loop.}
 		\labfig{canonicalBlockDiagram}
 \end{marginfigure}
-\todo{negative feedback}
+
 A Block Diagram is a shorthand pictorial representation of the cause-and-effect relationship of a system.
 Control systems require the arithmetic manipulation in order to obtain the overall transfer function and
 this is the start point for the analysis of the system.\\
@@ -129,13 +127,11 @@ Take-off point & : &\\
 \subsection[Overall transfer function]{Overall transfer function (feedback loop elimination):}
 Applying reduction techniques mentioned above, we can obtain the overall transfer function of \reffig{canonicalBlockDiagram} 
 
-\todo{Give more space between each pair}
-
 \begin{tabular}{r c l r}
-	\multicolumn{2}{c}{$@\ s:$} & $E = R - B$ & \note{summation point}\\
-			&$\because  $& $B = CH$ & \note{block}\\
-			&$\therefore$& $E = R - CH$ &\\
-			&$\because  $& $C = GE$ & \note{block}\\
+	\multicolumn{2}{c}{$@\ s:$} & $E = R - B$ & \note{summation point}\\[+1mm]
+			&$\because  $& $B = CH$ & \note{block}\\[+1mm]
+			&$\therefore$& $E = R - CH$ &\\[+2mm]
+			&$\because  $& $C = GE$ & \note{block}\\[+1mm]
 			&$\therefore$& $C = G(R-CH)$ &\\
 			&& $C + CGH = GR$ & \\
 			&& $C(1+GH) = GR$ & \\
@@ -153,5 +149,5 @@ Applying reduction techniques mentioned above, we can obtain the overall transfe
 		\labfig{OverallTransferBlockDiagram}
 \end{marginfigure}
 
-$End\ ?$
-\todo{Missed super position in multi i/p and postponed the mathematical models}
+%$End\ ?$
+%\todo{Missed super position in multi i/p and postponed the mathematical models}
