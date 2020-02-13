@@ -3,7 +3,12 @@
 \labch{laplace}
 
 \newcommand{\Laplace}[1]{\ensuremath{\mathcal{L}{\left[#1\right]}}}
-\newcommand{\row}[2]{&\\[-1mm] $#1$ & $#2$\\ &\\[-1mm]}
+\newcommand{\row}[2]{\multicolumn{2}{c}{}\\[-1em] $#1$ & $#2$\\ \multicolumn{2}{c}{}\\[-1em]}
+\newcommand{\separation}{
+			\multicolumn{2}{c}{}\\[-1em]
+	        \hline
+	        \multicolumn{2}{c}{}\\[-1em]
+}
 
 \begin{description}
 \item[Remember] that we consider all functions as defined only on $t \geq 0$.
@@ -14,19 +19,22 @@
 \labtab{laplaceSpecificTable}
 \centering
 \tiny
- 	\begin{tabular}{|l | l|}
+ 	\begin{tabular}{l | l}
 	        \hline
 	        \multicolumn{2}{c}{}\\[-1em]
-	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)e^{-st}dt}=F(s)$\\
-	        \multicolumn{2}{c}{}\\[-1em]
-	        \hline
-	        \row{f(at)}{}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
+	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)\ e^{-st}dt}=F(s)$\\
+	        \separation
+	        \row{f(at)}{\dfrac{1}{a}F(\dfrac{s}{a})}
+	        \row{\grave{f}(t)}{sF(s)-F(0)}
+	        \row{\displaystyle{\int_0^t f(x)dx}}{\dfrac{1}{s}F(s)}
+	        \separation
+	        \row{t f(t)}{-\grave{F}(s)}
+	        \row{\dfrac{1}{t}f(t)}{\displaystyle{\int_s^\infty F(x)dx}}
+	        \separation
+	        \row{e^{at}f(t)}{F(s-a)}
+	        \row{f(t-a)\mathcal{U}(t-a)}{e^{-as}F(s)}
+	        \separation
+	        \row{\displaystyle{\int_0^t f(x)g(t-x)dx}}{F(s)\ G(s)}
 	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
 	    \end{tabular}
@@ -35,19 +43,21 @@
 \begin{table}[h]
 \caption[Laplace general transforms]{General transforms}
 \labtab{laplaceGeneralTable}
- 	\begin{tabular}{|l | l|}
+ 	\begin{tabular}{l | l}
 	        \hline
 	        \multicolumn{2}{c}{}\\[-1em]
-	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)e^{-st}dt}=F(s)$\\
+	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)\ e^{-st}dt}=F(s)$\\
 	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
-	        \row{R}{reference input / desired output response}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
+	        \row{}{}
 	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
 	    \end{tabular}
