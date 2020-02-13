@@ -1,5 +1,5 @@
 \setchapterstyle{lines}
-\chapter{Table of Laplace Transforms}
+\chapter{Laplace Transforms}
 \labch{laplace}
 
 \newcommand{\Laplace}[1]{\ensuremath{\mathcal{L}{\left[#1\right]}}}
@@ -11,7 +11,7 @@
 }
 
 \begin{description}
-\item[Remember] that we consider all functions as defined only on $t \geq 0$.
+\item[Remember] that we consider all functions are defined only on $t \geq 0$.
 \end{description}
 
 \begin{margintable}[-0.312cm]
@@ -41,27 +41,50 @@
 \end{margintable}
 
 \begin{table}[h]
-\caption[Laplace general transforms]{General transforms}
+\caption[Laplace general transforms]{General transforms\linkC{http://integral-table.com}}
 \labtab{laplaceGeneralTable}
  	\begin{tabular}{l | l}
 	        \hline
 	        \multicolumn{2}{c}{}\\[-1em]
 	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)\ e^{-st}dt}=F(s)$\\
-	        \multicolumn{2}{c}{}\\[-1em]
-	        \hline
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
-	        \row{}{}
+	        \separation
+	        \row{a}{\dfrac{a}{s}}
+	        \row{\delta(t-a)}{e^{-as}}
+			\row{\mathcal{U}(t-a)}{\dfrac{1}{s}\ e^{-as}}
+			\row{e^{at}}{\dfrac{1}{s-a}}
+	        \row{\sin at}{\dfrac{a}{s^2+a^2}}
+	        \row{\cos at}{\dfrac{s}{s^2+a^2}}
+	        \row{\sinh at}{\dfrac{a}{s^2-a^2}}
+	        \row{\cosh at}{\dfrac{s}{s^2-a^2}}
+			\multicolumn{2}{c}{}\\[-1em]
+	        \row{t^p}{\dfrac{\Gamma(p+1)}{s^{p+1}}\ ,\  _{p>-1}}
 	        \multicolumn{2}{c}{}\\[-1em]
 	        \hline
 	    \end{tabular}
 \end{table}
 
-Thanks \ldots
-\todo{Provide a link to the file}
+\begin{table}[h]
+\caption[Laplace specific transforms]{Specific transforms\linkS{https://drive.google.com/open?id=1bzh4fp2KrQu1WUOI2OGgwk-Pc214ishB}}
+\labtab{laplaceGeneralTable}
+ 	\begin{tabular}{l | l}
+	        \hline
+	        \multicolumn{2}{c}{}\\[-1em]
+	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)\ e^{-st}dt}=F(s)$\\
+	        \separation
+	        \row{\dfrac{d^n}{dt^n}}{s^{\boldsymbol{n}_{ote}\ \rightsquigarrow} \ \footnote{\tiny Despite being not convinced, it's mentioned in the doctor's notes.}}
+			\row{e^{-at}\sin \omega t}{\dfrac{\omega}{(s+a)^2+\omega^2}}
+			\row{e^{-at}\cos \omega t}{\dfrac{s+a}{(s+a)^2+\omega^2}}
+			\row{\displaystyle{\int_{-\infty}^t f(x)dx}}{\dfrac{1}{s}F(s)+\displaystyle{\int_{-\infty}^0 f(x)dx}}
+	        \multicolumn{2}{c}{}\\[-1em]
+	        \hline
+	    \end{tabular}
+\end{table}
+\note{$a: constant,x: dummy\ variable, p: real\ number, n: integer$}
+
+\begin{description}
+\item[Gamma function] which is defined as:\\
+	\hspace*{\fill}$\Gamma \left( p \right) = \int\limits_0^\infty {e^{ - x} x^{p - 1} dx}$\linkS{http://equplus.net/eqninfo/Equation-322.html}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+	\normalsize If $n$ is a positive integer then,\\
+	\hspace*{\fill}$\Gamma \left( p \right) = p!$\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\
+\end{description}
+
