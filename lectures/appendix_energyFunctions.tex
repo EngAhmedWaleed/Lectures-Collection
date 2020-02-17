@@ -4,7 +4,11 @@
 
 % Add tooltip: ``Feedback control system analysis and synthesis. John j. Dazzo, Constantine h. Houpis 
 % 				 (Tables [2-6 mixed with 2-9], 2-7, and 2-8) 2nd Edition''
- 
+
+\newcommand{\half}{
+	\dfrac{1}{2}
+}
+
 % Appendix tables
 \renewcommand{\row}[4]{
 	\small #1 & \small #2 & \small #3 & \small #4\\
@@ -20,15 +24,15 @@
 % \begin{table}[h]
 % 	\caption[<name>]{Forcing function is $ <force> $}
 % 	\labtab{<label>}
-% 	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+% 	 	\begin{tabular}{>{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
 % 		        \hline
 % 		        \multicolumn{4}{c}{}\\[-1em]
 % 		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
 % 		        \separation
 % 		        
-% 		        \row{}{  }{\textemdash}{\textemdash}
-%		        \row{}{\textemdash}{  }{\textemdash}
-%		        \row{}{\textemdash}{\textemdash}{  }
+% 		        \row{}{ $\half$ }{\textemdash}{\textemdash}
+%		        \row{}{\textemdash}{ $\half$ }{\textemdash}
+%		        \row{}{\textemdash}{\textemdash}{ $\half$ }
 % 		        
 % 		        \multicolumn{4}{c}{}\\[-1em]
 % 		        \hline
@@ -38,17 +42,17 @@
 \section{Electric Circuits}
 
 \begin{table}[h]
-	\caption[Circuits (Mesh)]{Forcing function is $e\ voltage$}
+	\caption[Circuits (Mesh)]{Forcing function is $v\ voltage$}
 	\labtab{meshCircuits}
-	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
 		        \hline
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
 		        \separation
 		        
-		        \row{Inductance, $L$}{  }{\textemdash}{\textemdash}
-		        \row{Capacitance, $C$}{\textemdash}{  }{\textemdash}
-		        \row{Resistance, $R$}{\textemdash}{\textemdash}{  }
+		        \row{Inductance, $L$}{ $\half Li^2$ }{\textemdash}{\textemdash}
+		        \row{Capacitance, $C$}{\textemdash}{ $\dfrac{1}{2C}\ (\int i\ dt)^2$ }{\textemdash}
+		        \row{Resistance, $R$}{\textemdash}{\textemdash}{ $\half Ri^2$ }
 		        
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \hline
@@ -58,15 +62,15 @@
 \begin{table}[h]
 	\caption[Circuits (Nodal)]{Forcing function is $i\ current$}
 	\labtab{nodalCircuits}
-	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
 		        \hline
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
 		        \separation
 		        
-		        \row{Inductance, $L$}{  }{\textemdash}{\textemdash}
-		        \row{Capacitance, $C$}{\textemdash}{  }{\textemdash}
-		        \row{Resistance, $R$}{\textemdash}{\textemdash}{  }
+		        \row{Inductance, $L$}{\textemdash}{ $\dfrac{1}{2L}\ (\int v\ dt)^2$ }{\textemdash}
+		        \row{Capacitance, $C$}{ $\half Cv^2$ }{\textemdash}{\textemdash}
+		        \row{Conductance, $G$}{\textemdash}{\textemdash}{ $\half Gv^2$ }
 		        
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \hline
@@ -80,15 +84,15 @@
 \begin{table}[h]
 	\caption[Translational elements]{Forcing function is $F\ force$}
 	\labtab{translationalElements}
-	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
 		        \hline
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
 		        \separation
 		        
-		        \row{Mass, $M$}{  }{\textemdash}{\textemdash}
-		        \row{Elastance, $K$}{\textemdash}{  }{\textemdash}
-		        \row{Damping, $B$}{\textemdash}{\textemdash}{  }
+		        \row{Mass, $M$}{ $\half M\dot{x}^2$ }{\textemdash}{\textemdash}
+		        \row{Elastance, $K$}{\textemdash}{ $\half K(x_o-x)^2$ }{\textemdash}
+		        \row{Damping, $B$}{\textemdash}{\textemdash}{ $\half B(\dot{x}_o-\dot{x})^2$ }
 		        
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \hline
@@ -99,15 +103,15 @@
 \begin{table}[!htbp]
 	\caption[Rotational elements]{Forcing function is $\tau\ torque$}
 	\labtab{rotationalElements}
-	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
 		        \hline
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
 		        \separation
 		        
-		        \row{Mass, $M$}{  }{\textemdash}{\textemdash}
-		        \row{Elastance, $K$}{\textemdash}{  }{\textemdash}
-		        \row{Damping, $B$}{\textemdash}{\textemdash}{  }
+		        \row{Moment of inertia, $J$}{ $\half J\dot{\theta}^2$ }{\textemdash}{\textemdash}
+		        \row{Elastance, $K$}{\textemdash}{ $\half K(\theta_o-\theta)^2$ }{\textemdash}
+		        \row{Damping, $B$}{\textemdash}{\textemdash}{ $\half B(\dot{\theta}_o-\dot{\theta})^2$ }
 		        
 		        \multicolumn{4}{c}{}\\[-1em]
 		        \hline
@@ -115,6 +119,8 @@
 \end{table}
 
 \begin{description}
-\item[Reference] Feedback control system analysis and synthesis.\  John j. Dazzo\footnote
-				 {Tables 2-6, 2-7, 2-8, and 2-9 ``2nd Edition''}
+\item[Reference] Feedback control system analysis and synthesis.\footnote{Tables 2-6, 2-7, 2-8, and 2-9 ``2nd Edition''}
+			\\\note{John j. Dazzo, Constantine h. Houpis}
 \end{description}
+
+% \todo{double check moment of inertia \ldots}
