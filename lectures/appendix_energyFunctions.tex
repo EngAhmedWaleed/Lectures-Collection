@@ -2,12 +2,119 @@
 \chapter[Identification of Energy Functions]{Identification of Energy Functions}
 \labch{energyFunc}
 
+% Add tooltip: ``Feedback control system analysis and synthesis. John j. Dazzo, Constantine h. Houpis 
+% 				 (Tables [2-6 mixed with 2-9], 2-7, and 2-8) 2nd Edition''
+ 
 % Appendix tables
-\renewcommand{\row}[5]{
-	photo, equation and 3 dashes.
+\renewcommand{\row}[4]{
+	\small #1 & \small #2 & \small #3 & \small #4\\
 }
 \renewcommand{\separation}{
-			\multicolumn{2}{c}{}\\[-1em]
+			\multicolumn{4}{c}{}\\[-1em]
 	        \hline
-	        \multicolumn{2}{c}{}\\[-1em]
+	        \multicolumn{4}{c}{}\\[-1em]
 }
+
+% https://www.overleaf.com/learn/latex/Tables
+% Table Template
+% \begin{table}[h]
+% 	\caption[<name>]{Forcing function is $ <force> $}
+% 	\labtab{<label>}
+% 	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+% 		        \hline
+% 		        \multicolumn{4}{c}{}\\[-1em]
+% 		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
+% 		        \separation
+% 		        
+% 		        \row{}{  }{\textemdash}{\textemdash}
+%		        \row{}{\textemdash}{  }{\textemdash}
+%		        \row{}{\textemdash}{\textemdash}{  }
+% 		        
+% 		        \multicolumn{4}{c}{}\\[-1em]
+% 		        \hline
+% 		    \end{tabular}
+% \end{table}
+
+\section{Electric Circuits}
+
+\begin{table}[h]
+	\caption[Circuits (Mesh)]{Forcing function is $e\ voltage$}
+	\labtab{meshCircuits}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+		        \hline
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
+		        \separation
+		        
+		        \row{Inductance, $L$}{  }{\textemdash}{\textemdash}
+		        \row{Capacitance, $C$}{\textemdash}{  }{\textemdash}
+		        \row{Resistance, $R$}{\textemdash}{\textemdash}{  }
+		        
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \hline
+		    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+	\caption[Circuits (Nodal)]{Forcing function is $i\ current$}
+	\labtab{nodalCircuits}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+		        \hline
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
+		        \separation
+		        
+		        \row{Inductance, $L$}{  }{\textemdash}{\textemdash}
+		        \row{Capacitance, $C$}{\textemdash}{  }{\textemdash}
+		        \row{Resistance, $R$}{\textemdash}{\textemdash}{  }
+		        
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \hline
+		    \end{tabular}
+\end{table}
+ 
+
+
+\section{Mechanics}
+
+\begin{table}[h]
+	\caption[Translational elements]{Forcing function is $F\ force$}
+	\labtab{translationalElements}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+		        \hline
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
+		        \separation
+		        
+		        \row{Mass, $M$}{  }{\textemdash}{\textemdash}
+		        \row{Elastance, $K$}{\textemdash}{  }{\textemdash}
+		        \row{Damping, $B$}{\textemdash}{\textemdash}{  }
+		        
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \hline
+		    \end{tabular}
+\end{table}
+
+% https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
+\begin{table}[!htbp]
+	\caption[Rotational elements]{Forcing function is $\tau\ torque$}
+	\labtab{rotationalElements}
+	 	\begin{tabular}{>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{2.2cm} | >{\centering\arraybackslash}m{2.8cm}}
+		        \hline
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \row{Element}{Kinetic energy $T$}{Potential energy $V$}{Dissipation function $D$}
+		        \separation
+		        
+		        \row{Mass, $M$}{  }{\textemdash}{\textemdash}
+		        \row{Elastance, $K$}{\textemdash}{  }{\textemdash}
+		        \row{Damping, $B$}{\textemdash}{\textemdash}{  }
+		        
+		        \multicolumn{4}{c}{}\\[-1em]
+		        \hline
+		    \end{tabular}
+\end{table}
+
+\begin{description}
+\item[Reference] Feedback control system analysis and synthesis.\  John j. Dazzo\footnote
+				 {Tables 2-6, 2-7, 2-8, and 2-9 ``2nd Edition''}
+\end{description}
