@@ -25,11 +25,11 @@
 	        $f(t)$ 	& $\Laplace{f(t)}=\displaystyle{\int_0^\infty f(t)\ e^{-st}dt}=F(s)$\\
 	        \separation
 	        \row{f(at)}{\dfrac{1}{a}F(\dfrac{s}{a})}
-	        \row{\grave{f}(t)}{sF(s)-F(0)}
+	        \row{\grave{f}(t)}{sF(s)-f(0)}
 	        \row{\displaystyle{\int_0^t f(x)dx}}{\dfrac{1}{s}F(s)}
 	        \separation
 	        \row{t f(t)}{-\grave{F}(s)}
-	        \row{\dfrac{1}{t}f(t)}{\displaystyle{\int_s^\infty F(x)dx}}
+	        \row{\dfrac{1}{t}f(t)}{\displaystyle{\int_s^\infty F(x)dx}\ ,\  if\ \lim\limits_{t \to 0} \dfrac{1}{t}f(t)\ exists}
 	        \separation
 	        \row{e^{at}f(t)}{F(s-a)}
 	        \row{f(t-a)\mathcal{U}(t-a)}{e^{-as}F(s)}

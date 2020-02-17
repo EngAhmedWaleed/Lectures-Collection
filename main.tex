@@ -79,6 +79,10 @@
 \newcommand{\linkS}[1]{
 	\scriptsize \href{#1}{\ding{242}}
 }
+% Tooltip giving information about sources of materials
+\newcommand{\info}[1]{
+	\scriptsize \tooltip****{s}{asd}
+}
 
 \newcommand{\note}[1]{
 	\scriptsize{\hspace*{\fill} (#1)} \normalsize
@@ -161,7 +165,7 @@
 \setchapterstyle{kao} % Choose the default chapter heading style
 
 \input{lectures/lec1.tex}
-
+\input{lectures/lec2.tex}
 
 \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 \pagelayout{wide} % No margins
@@ -169,5 +173,6 @@
 \pagelayout{margin} % Restore margins
 
 \input{lectures/appendix_laplace.tex}
+\input{lectures/appendix_energyFunctions.tex}
 
 \end{document}
