@@ -9,9 +9,9 @@ The purpose of this chapter is to present methods of writing the differntial equ
 This is the first step that must be mastered by the would-be control systems engineer.\\
 
 Series Resistor-Inductor-Capacitor Circuit\\ \\
-$V_R=R\ i$\\
-$V_L=(LD)\ i$\\
-$V_C=(\dfrac{1}{CD})\ i$\\
+$v_R = R\ i$\\
+$v_L = (LD)\ i$\\
+$v_C = (\dfrac{1}{CD})\ i$\\
 
 $v = (LD + R + \dfrac{1}{CD})\ i$\\
 $V(s) = (Ls + R + \dfrac{1}{Cs})\ I(s)$\\
@@ -19,9 +19,9 @@ $V(s) = (Ls + R + \dfrac{1}{Cs})\ I(s)$\\
 R -> Resistor, L -> Inductor, C -> Capacitor\\
 
 Simple Mechanical Translation System\\
-$f_M=(MD^2)\ x$\\
-$f_B=(BD)\ x$\\
-$f_K=K\ x$
+$f_M = (MD^2)\ x$\\
+$f_B = (BD)\ x$\\
+$f_K = K\ x$
 
 $f = (MD^2+BD+K)\ x$\\
 $F(s) = (Ms^2+Bs+K)\ X(s)$\\
@@ -29,9 +29,9 @@ $F(s) = (Ms^2+Bs+K)\ X(s)$\\
 M -> Mass, B -> Damping or viscous friction, K -> Elastanse, or stiffness\\
 
 Simple Mechanical Rotational System\\
-$\tau_M=(JD^2)\ \theta$\\
-$\tau_B=(BD)\ \theta$\\
-$\tau_K=K\ \theta$
+$\tau_J = (JD^2)\ \theta$\\
+$\tau_B = (BD)\ \theta$\\
+$\tau_K = K\ \theta$
 
 $\tau = (JD^2+BD+K)\ \theta$\\
 $T(s) = (Js^2+Bs+K)\ \Theta(s)$\\
@@ -39,16 +39,31 @@ $T(s) = (Js^2+Bs+K)\ \Theta(s)$\\
 J -> Moment of inertia, B -> Damping or viscous friction, K -> Elastanse, or stiffness\\
 
 Single-stage Rotating Amplifier (Field Controlled Generator)\\
-$v_f=(DL_f+R_f)\ i_f$\\
-$e_g=K_g\ i_f$\\
+$v_f = (DL_f+R_f)\ i_f$\\
+$v_g = K_g\ i_f$\\
 
-$v_f=(\dfrac{DL_f+R_f}{K_G})\ e_g$\\
+$v_f = (\dfrac{DL_f+R_f}{K_G})\ v_g$\\
 
-F -> field, G -> Generator
+F -> field, G -> Generator\\
 
 D-C Servomotor (Armature Controlled Motor)\\
+$v_m = (K_b\ D)\ \theta_m$\\
+$\tau = K_T\ i_m,\ also:\  \tau = (JD^2+BD)\ \theta_m$ \note{Stiffness neglected}\\	%--> ãßÑÑÉ
+$i_m = (\dfrac{JD^2+BD}{K_T})\ \theta_m$\\
+$v_a = v_m + (L_m D+R_m)\ i_m $\\
 
-\ldots
+$v_a = [\dfrac{(L_m J)\ D^3 + (L_m B+R_m J)\ D^2 + (R_m B + K_b K_T)\ D}{K_T}]\ \theta_m$
+
+M -> Motor, A -> Armature\\
+
+D-C Servomotor (Field Controlled Motor)\\
+$\tau = K_f\ i_f,\ also:\  \tau = (JD^2+BD)\ \theta_m$ \note{Stiffness neglected}\\	%--> ãßÑÑÉ
+$i_f = (\dfrac{JD^2+BD}{K_f})\ \theta_m$\\
+$v_f = (DL_f+R_f)\ i_f$\\	%--> ãßÑÑÉ
+
+$v_f = [\dfrac{(JD^2+BD)(DL_f+R_f)}{K_f}]\ \theta_m$
+
+F -> Field, M -> Motor\\
 
 
 \begin{description}
