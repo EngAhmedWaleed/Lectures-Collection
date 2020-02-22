@@ -4,8 +4,23 @@
 
 \section[Intro. to Mathematical Models]{Introduction to Mathematical Models}
 \labsec{sec2.1}
+We will be studying single output linear continuous systems. If a system has more than one input
+the superposition principle will be applied.
 
-The purpose of this chapter is to present methods of writing the differntial equations for a variety of electrical and mechanical systems.
+
+\subsection[Super Position Principle]{Super Position Principle\linkC{https://en.wikipedia.org/wiki/Superposition_principle}}
+ The superposition property, states that, for all linear systems, the net response caused by two
+ or more stimuli is the sum of the responses that would have been caused by each stimulus individually.\\[+1em]
+\hspace*{\fill}\fbox{
+		    \parbox{3.8cm}{
+		    $\ F(x_1 + x_2) = F(x_1) + F(x_2)$
+	    	}
+}\\[+1em]
+\note{It can be used to prove linearity}
+
+
+\subsection{Simple Systems Equations}
+The purpose of this section is to present methods of writing the differential equations for a variety of electrical and mechanical systems.
 This is the first step that must be mastered by the would-be control systems engineer.\\
 
 Series Resistor-Inductor-Capacitor Circuit\\ \\
@@ -26,7 +41,7 @@ $f_K = K\ x$
 $f = (MD^2+BD+K)\ x$\\
 $F(s) = (Ms^2+Bs+K)\ X(s)$\\
 
-M -> Mass, B -> Damping or viscous friction, K -> Elastanse, or stiffness\\
+M -> Mass, B -> Damping or viscous friction, K -> Elastance, or stiffness\\
 
 Simple Mechanical Rotational System\\
 $\tau_J = (JD^2)\ \theta$\\
@@ -36,7 +51,7 @@ $\tau_K = K\ \theta$
 $\tau = (JD^2+BD+K)\ \theta$\\
 $T(s) = (Js^2+Bs+K)\ \Theta(s)$\\
 
-J -> Moment of inertia, B -> Damping or viscous friction, K -> Elastanse, or stiffness\\
+J -> Moment of inertia, B -> Damping or viscous friction, K -> Elastance, or stiffness\\
 
 Single-stage Rotating Amplifier (Field Controlled Generator)\\
 $v_f = (DL_f+R_f)\ i_f$\\
@@ -65,8 +80,15 @@ $v_f = [\dfrac{(JD^2+BD)(DL_f+R_f)}{K_f}]\ \theta_m$
 
 F -> Field, M -> Motor\\
 
-
 \begin{description}
 \item[Reference] Feedback control system analysis and synthesis.\footnote{Sections 2-2, 2-3, 2-5, 2-9, 2-10 ``2nd Edition''}
 			\\\note{John j. Dazzo, Constantine h. Houpis}
 \end{description}
+
+\section[Block Diagram Reduction $_{p\ 2}$]{Reduction Techniques (Moving Points)}
+\labsec{sec2.2}
+can be done easily \ldots\\
+
+\section{Schematic to Block Diagram}
+\labsec{sec2.2}
+Fig 5-18 page 5 of 11 \ldots\\
