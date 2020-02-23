@@ -2,10 +2,15 @@
 \chapter{Second Lecture}
 \labch{lec2}
 
+\newcolumntype{C}[1]{
+	 >{\vbox to 3ex\bgroup\vfill\centering}
+	 p{#1}<{\egroup}
+}  
+
 \section[Intro. to Mathematical Models]{Introduction to Mathematical Models}
 \labsec{sec2.1}
 We will be studying single output linear continuous systems. If a system has more than one input
-the superposition principle will be applied.
+the superposition principle will be applied.\\[-2em]
 
 
 \subsection[Super Position Principle]{Super Position Principle\linkC{https://en.wikipedia.org/wiki/Superposition_principle}}
@@ -16,74 +21,140 @@ the superposition principle will be applied.
 		    $\ F(x_1 + x_2) = F(x_1) + F(x_2)$
 	    	}
 }\\[+1em]
-\note{It can be used to prove linearity}
+\note{It can be used to prove linearity}\\[-3em]
 
 
-\subsection{Simple Systems Equations}
+\subsection[Simple Systems Equations]{Simple Systems Equations\linkT{Reference: Feedback control system analysis and synthesis}}
 The purpose of this section is to present methods of writing the differential equations for a variety of electrical and mechanical systems.
-This is the first step that must be mastered by the would-be control systems engineer.\\
+This is the first step that must be mastered by the would-be control systems engineer.\\[-1em]
 
-Series Resistor-Inductor-Capacitor Circuit\\ \\
-$v_R = R\ i$\\
-$v_L = (LD)\ i$\\
-$v_C = (\dfrac{1}{CD})\ i$\\
 
-$v = (LD + R + \dfrac{1}{CD})\ i$\\
-$V(s) = (Ls + R + \dfrac{1}{Cs})\ I(s)$\\
+Series Resistor-Inductor-Capacitor Circuit\\[-1mm]
+\begin{marginfigure}[-1em]
+		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\caption{Electrical system.}
+\end{marginfigure}
 
-R -> Resistor, L -> Inductor, C -> Capacitor\\
+\begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
+			&$v_L$& $=$ & $(LD)\ i$ &\\
+			&$v_R$& $=$ & $R\ i$	&\\
+			&$v_C$& $=$ & $(\dfrac{1}{CD})\ i$&\\
+			&&&&
+\end{tabular}
 
-Simple Mechanical Translation System\\
-$f_M = (MD^2)\ x$\\
-$f_B = (BD)\ x$\\
-$f_K = K\ x$
+\vspace{-4em}
+\hspace*{\fill}\fbox{
+			    \parbox{3.2cm}{
+			    $v = (LD + R + \dfrac{1}{CD})\ i$
+		    		}
+}\\[+2mm]
+\note{$R:\ resistor,\ L:\ inductor,\ C:\ capacitor$}\\[-1em]
 
-$f = (MD^2+BD+K)\ x$\\
-$F(s) = (Ms^2+Bs+K)\ X(s)$\\
 
-M -> Mass, B -> Damping or viscous friction, K -> Elastance, or stiffness\\
+Simple Mechanical Translation System\\[-1mm]
+\begin{marginfigure}[-1em]
+		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\caption{Mechanical translation system.}
+\end{marginfigure}
 
-Simple Mechanical Rotational System\\
-$\tau_J = (JD^2)\ \theta$\\
-$\tau_B = (BD)\ \theta$\\
-$\tau_K = K\ \theta$
+\begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
+			&$f_M$& $=$ & $(MD^2)\ x$ &\\
+			&$f_B$& $=$ & $(BD)\ x$	&\\
+			&$f_K$& $=$ & $K\ x$&\\
+\end{tabular}
 
-$\tau = (JD^2+BD+K)\ \theta$\\
-$T(s) = (Js^2+Bs+K)\ \Theta(s)$\\
+\vspace{-1em}
+\hspace*{\fill}\fbox{
+			    \parbox{3.5cm}{
+			    $f = (MD^2+BD+K)\ x$
+		    		}
+}\\[+2mm]
+\note{$M:\ mass,\ B:\ damping\ or\ viscous\ friction,\ K:elastance\ or\ stiffness$}\\
 
-J -> Moment of inertia, B -> Damping or viscous friction, K -> Elastance, or stiffness\\
+\pagebreak
 
-Single-stage Rotating Amplifier (Field Controlled Generator)\\
-$v_f = (DL_f+R_f)\ i_f$\\
-$v_g = K_g\ i_f$\\
+Simple Mechanical Rotational System\\[-1mm]
+\begin{marginfigure}[-1em]
+		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\caption{Mechanical rotational system.}
+\end{marginfigure}
 
-$v_f = (\dfrac{DL_f+R_f}{K_G})\ v_g$\\
+\begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
+			&$\tau_J$& $=$ & $(JD^2)\ \theta$ &\\
+			&$\tau_B$& $=$ & $(BD)\ \theta$	&\\
+			&$\tau_K$& $=$ & $K\ \theta$&\\
+\end{tabular}
 
-F -> field, G -> Generator\\
+\vspace{-1em}
+\hspace*{\fill}\fbox{
+			    \parbox{3.3cm}{
+			    $\tau = (JD^2+BD+K)\ \theta$
+		    		}
+}\\[+2mm]
+\note{$J:\ moment\ of\ inertia$}\\[-1.5em]
 
-D-C Servomotor (Armature Controlled Motor)\\
-$v_m = (K_b\ D)\ \theta_m$\\
-$\tau = K_T\ i_m,\ also:\  \tau = (JD^2+BD)\ \theta_m$ \note{Stiffness neglected}\\	%--> ãßÑÑÉ
-$i_m = (\dfrac{JD^2+BD}{K_T})\ \theta_m$\\
-$v_a = v_m + (L_m D+R_m)\ i_m $\\
 
-$v_a = [\dfrac{(L_m J)\ D^3 + (L_m B+R_m J)\ D^2 + (R_m B + K_b K_T)\ D}{K_T}]\ \theta_m$
+Single-stage Rotating Amplifier\\[-1mm]
+\begin{marginfigure}[-1em]
+		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\caption{Field controlled generator.}
+\end{marginfigure}
 
-M -> Motor, A -> Armature\\
+\begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
+			&$v_F$& $=$ & $(DL_F+R_F)\ i_F$ &\\
+			&$v_G$& $=$ & $K_G\ i_F$&\\
+\end{tabular}
 
-D-C Servomotor (Field Controlled Motor)\\
-$\tau = K_f\ i_f,\ also:\  \tau = (JD^2+BD)\ \theta_m$ \note{Stiffness neglected}\\	%--> ãßÑÑÉ
-$i_f = (\dfrac{JD^2+BD}{K_f})\ \theta_m$\\
-$v_f = (DL_f+R_f)\ i_f$\\	%--> ãßÑÑÉ
+\vspace{-1em}
+\hspace*{\fill}\fbox{
+			    \parbox{3.1cm}{
+			    $v_F = (\dfrac{DL_F+R_F}{K_G})\ v_G$
+		    		}
+}\\[+2mm]
+\note{$F:\ field,\ G:\ generator$}\\[-1.5em]
 
-$v_f = [\dfrac{(JD^2+BD)(DL_f+R_f)}{K_f}]\ \theta_m$
+D-C Servomotor\\[-1mm]
+\todo{\tiny{Keep in mind the mechanical rotational system equation.}}
 
-F -> Field, M -> Motor\\
+Armature Controlled Motor\\[-1mm]
+\begin{marginfigure}[-1em]
+		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\caption{Armature controlled motor.}
+\end{marginfigure}
 
-\begin{description}
-\item[Reference] Feedback control system analysis and synthesis.\footnote{Sections 2-2, 2-3, 2-5, 2-9, 2-10 ``2nd Edition''}
-			\\\note{John j. Dazzo, Constantine h. Houpis}
-\end{description}
+\begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
+			&$v_M$ & $=$ & $(K_b\ D)\ \theta_M$ &\\
+			&$\tau$& $=$ & $K_T\ i_M$ &\\
+			&$i_M$ & $=$ & $(\dfrac{JD^2+BD}{K_T})\ \theta_M$ &\\
+			&$v_A$ & $=$ & $v_M + (L_M D+R_M)\ i_M$ &\\
+\end{tabular}
+
+\vspace{-1em}
+\hspace*{\fill}\fbox{
+			    \parbox{9.1cm}{
+			    $v_A = [\dfrac{(L_M J)\ D^3 + (L_M B+R_M J)\ D^2 + (R_M B + K_b K_T)\ D}{K_T}]\ \theta_M$
+		    		}
+}\\[+2mm]
+\note{$M:\ motor,\ A:\ armature$}\\[-1.5em]
+
+Field Controlled Motor\\[-1mm]
+\begin{marginfigure}[-1em]
+		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\caption{Field controlled motor.}
+\end{marginfigure}
+
+\begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
+			&$\tau$& $=$ & $K_F\ i_F$ &\\
+			&$i_F $& $=$ & $(\dfrac{JD^2+BD}{K_F})\ \theta_M$ &\\
+			&$v_F $& $=$ & $(DL_F+R_F)\ i_F$&\\
+\end{tabular}
+
+\vspace{-1em}
+\hspace*{\fill}\fbox{
+			    \parbox{5.2cm}{
+			    $v_F = [\dfrac{(JD^2+BD)(DL_F+R_F)}{K_F}]\ \theta_M$
+		    		}
+}\\
 
 \section[Block Diagram Reduction $_{p\ 2}$]{Reduction Techniques (Moving Points)}
 \labsec{sec2.2}

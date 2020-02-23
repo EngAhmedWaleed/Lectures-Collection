@@ -44,8 +44,11 @@
 %\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
 %\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
 
-% provides commands for Pi fonts (Dingbats, Symbol, etc
+% provides commands for Pi fonts (Dingbats, Symbol, .. etc)
 \usepackage{pifont} 
+
+% https://tex.stackexchange.com/questions/12761/how-to-specify-a-fixed-height-for-all-rows-in-a-table
+\usepackage{array}
 
 % Load the bibliography package
 \usepackage{styles/kaobiblio}
@@ -79,13 +82,15 @@
 \newcommand{\linkS}[1]{
 	\scriptsize \href{#1}{\ding{242}}
 }
-% Tooltip giving information about sources of materials
-\newcommand{\info}[1]{
-	\scriptsize \tooltip****{s}{asd}
-}
 
 \newcommand{\note}[1]{
 	\scriptsize{\hspace*{\fill} (#1)} \normalsize
+}
+
+
+\input{resources/tooltip (tex.stackexchange.com).tex} 
+\newcommand{\linkT}[1]{
+	\small \tooltip{\ding{41}}{#1}
 }
 
 %----------------------------------------------------------------------------------------
