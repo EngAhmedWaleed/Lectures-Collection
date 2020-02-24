@@ -5,7 +5,15 @@
 \newcolumntype{C}[1]{
 	 >{\vbox to 3ex\bgroup\vfill\centering}
 	 p{#1}<{\egroup}
-}  
+}
+
+\newcommand{\tabularRow}[2]{
+	\multicolumn{4}{l}{#1}\\[+1em]
+	\includegraphics[width=0.4\textwidth]{#2 (before)}&
+	% https://www.pngrepo.com/svg/41763/rotated-right-arrow-with-broken-line 
+	\includegraphics[width=0.1\textwidth]{lec2/Rotated Right Arrow (pngrepo.com)} &
+	\includegraphics[width=0.4\textwidth]{#2 (after)}\\
+}
 
 \section[Intro. to Mathematical Models]{Introduction to Mathematical Models}
 \labsec{sec2.1}
@@ -32,7 +40,7 @@ This is the first step that must be mastered by the would-be control systems eng
 Series Resistor-Inductor-Capacitor Circuit\\[-1mm]
 \begin{marginfigure}[-1em]
 		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
-		\caption{Electrical system.}
+		\caption{Simple electrical system.}
 \end{marginfigure}
 
 \begin{tabular}{C{1mm} C{1mm} C{2cm} l l}
@@ -53,7 +61,7 @@ Series Resistor-Inductor-Capacitor Circuit\\[-1mm]
 
 Simple Mechanical Translation System\\[-1mm]
 \begin{marginfigure}[-1em]
-		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\includegraphics{lec2/Simple Mechanical Translation System}
 		\caption{Mechanical translation system.}
 \end{marginfigure}
 
@@ -75,7 +83,7 @@ Simple Mechanical Translation System\\[-1mm]
 
 Simple Mechanical Rotational System\\[-1mm]
 \begin{marginfigure}[-1em]
-		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\includegraphics{lec2/Simple Mechanical Rotational System}
 		\caption{Mechanical rotational system.}
 \end{marginfigure}
 
@@ -96,7 +104,7 @@ Simple Mechanical Rotational System\\[-1mm]
 
 Single-stage Rotating Amplifier\\[-1mm]
 \begin{marginfigure}[-1em]
-		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\includegraphics{lec2/Field controlled generator}
 		\caption{Field controlled generator.}
 \end{marginfigure}
 
@@ -118,7 +126,7 @@ D-C Servomotor\\[-1mm]
 
 Armature Controlled Motor\\[-1mm]
 \begin{marginfigure}[-1em]
-		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\includegraphics{lec2/Armature controlled motor}
 		\caption{Armature controlled motor.}
 \end{marginfigure}
 
@@ -139,7 +147,7 @@ Armature Controlled Motor\\[-1mm]
 
 Field Controlled Motor\\[-1mm]
 \begin{marginfigure}[-1em]
-		\includegraphics{lec2/Series Resistor-Inductor-Capacitor Circuit}
+		\includegraphics{lec2/Field controlled motor}
 		\caption{Field controlled motor.}
 \end{marginfigure}
 
@@ -158,8 +166,21 @@ Field Controlled Motor\\[-1mm]
 
 \section[Block Diagram Reduction $_{p\ 2}$]{Reduction Techniques (Moving Points)}
 \labsec{sec2.2}
-can be done easily \ldots\\
 
-\section{Schematic to Block Diagram}
-\labsec{sec2.2}
-Fig 5-18 page 5 of 11 \ldots\\
+\raggedleft
+\begin{tabular}{m{4cm} m{1cm} m{4cm}}
+	\tabularRow{Summing point behind a block:}{lec2/Summing behind}
+	\tabularRow{Summing point ahead a block:}{lec2/Summing ahead}
+	\tabularRow{Take-off point behind a block:}{lec2/Pickoff behind}
+	\tabularRow{Take-off point ahead a block:}{lec2/Pickoff ahead}
+\end{tabular}
+
+\vspace{1em}
+\begin{description}
+\item[Homework] Convert Motor-generator control schematic diagram to block diagram and simpify it.
+\end{description}
+
+\begin{figure*}[h!]
+	\includegraphics{lec2/Homework}
+	\caption{Motor-generator control.}
+\end{figure*}
