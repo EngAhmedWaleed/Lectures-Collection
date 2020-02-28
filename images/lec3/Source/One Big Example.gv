@@ -1,0 +1,30 @@
+digraph {
+
+	rankdir=LR;
+
+	X1, X2, X3, X4, X5, X6, X7, X8 [ shape = point ]
+	X9 [ color = white, shape = point ]
+
+	X1 -> X2  [ taillabel = <<br /><br />X<sub>1</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X2 -> X3  [ taillabel = <<br /><br /> X<sub>2</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X3 -> X4  [ taillabel = <<br /><br /> X<sub>3</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X4 -> X5  [ taillabel = <<br /><br /> X<sub>4</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X5 -> X6  [ taillabel = <<br /><br /> X<sub>5</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X6 -> X7  [ taillabel = <<br /><br /> X<sub>6</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X7 -> X8  [ taillabel = <<br /><br /> X<sub>7</sub>>, fontsize = 10, arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = w]
+	X8 -> X9  [ taillabel = <<br /><br /> X<sub>8</sub>>, fontsize = 10, penwidth = 0, arrowhead = none]
+
+
+	X2 -> X7 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = s, headport = s]
+
+	X2 -> X4 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = n, headport = n]
+	X7 -> X5 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = n, headport = n]
+
+	X7 -> X6 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = s, headport = s]
+	X6 -> X5 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = s, headport = s]
+	X5 -> X4 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = s, headport = s]
+	X4 -> X3 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = s, headport = s]
+	X3 -> X2 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = s, headport = s]
+	
+	X7 -> X7 [ arrowsize = 0.5, arrowhead = nonenonenormal, tailport = e, headport = n]
+}
