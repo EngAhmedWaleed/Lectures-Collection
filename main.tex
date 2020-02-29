@@ -70,9 +70,9 @@
 %\counterwithin*{sidenote}{chapter}
 
 % https://tex.stackexchange.com/questions/784/how-to-change-the-line-spacing-in-my-list-of-figures
-\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+%\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
 %\addtocontents{lof}{\protect\noaddvspace}
-\addtocontents{lot}{\protect\noaddvspace}
+%\addtocontents{lot}{\protect\noaddvspace}
 
 % Link copyrighted materials
 \newcommand{\linkC}[1]{
@@ -87,11 +87,15 @@
 	\scriptsize{\hspace*{\fill} (#1)} \normalsize
 }
 
-
 \input{resources/tooltip (tex.stackexchange.com).tex} 
 \newcommand{\linkT}[1]{
 	\small \tooltip{\ding{41}}{#1}
 }
+
+% https://latex.org/forum/viewtopic.php?t=2712
+% Normal : 304.44447pt (\the\textwidth)
+% Margin : 140.5566 pt (\the\textwidth)
+\newcommand{\marginratio}{0.4616822240193754}
 
 %----------------------------------------------------------------------------------------
 
@@ -188,7 +192,7 @@
 %\let\cleardoublepage\bigskip
 %\let\clearpage\bigskip
 
-\listoftables % Output the list of tables
+%\listoftables % Output the list of tables
 
 \endgroup
 
@@ -212,6 +216,7 @@
 
 \input{lectures/appendix_laplace.tex}
 \input{lectures/appendix_energyFunctions.tex}
+\input{lectures/appendix_notSimpleSystemsEquations.tex}
 \input{lectures/appendix_blockDiagramManipulations.tex}
 
 
