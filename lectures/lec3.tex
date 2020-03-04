@@ -51,24 +51,60 @@
 
 \subsection{Non-touching loops}
 
-\begin{description}
-	\item[Source Nodes]  Represent independent variables and have only outgoing branches. ($x_1$)
-	\item[Sink Nodes]  Represent dependent variables and have only incoming branches. ($x_8$)
-	\item[Mixed Nodes]  Have both incoming and outgoing branches. ($x_2 \to x_7$)
-\end{description}
+\raggedright
+\begin{tabular}{r r r}
+	\multicolumn{1}{l}{\textbf{Two at a time}} & \multicolumn{1}{l}{\ \ \ \ \ \textbf{Three at a time}} & \multicolumn{1}{l}{\ \ \ \ \ \textbf{Four at a time}} \\
+	\raggedright
+	\begin{tabular}{| c | c | c |}
+	        \multicolumn{3}{c}{}\\[-1em]
+	        $L_1L_3$ & $L_2L_4$ & $L_3L_6$ \\
+	        $L_1L_4$ & $L_2L_5$ & $L_4L_6$ \\
+	        $L_1L_5$ & $L_2L_6$ & $L_4L_7$ \\
+	        $L_1L_6$ & $L_2L_8$ & $L_5L_7$ \\
+	        $L_1L_8$ & $L_3L_5$ & $L_7L_8$ \\
+	        \multicolumn{3}{c}{}\\[-1em]
+	\end{tabular}&
+	\raggedright
+	\begin{tabular}{|c|}
+	        \multicolumn{1}{c}{}\\[-1em]
+	        $L_1L_3L_5$ \\
+			$L_1L_3L_6$ \\
+			$L_1L_4L_6$ \\
+			$L_2L_4L_6$ \\
+			$ $ \\
+	        \multicolumn{1}{c}{}\\[-1em]
+	\end{tabular}&\ldots\\
+\end{tabular}
 
 \subsection{Gain}
 	
 \begin{description}
-	\item[Source Nodes]  Represent independent variables and have only outgoing branches. ($x_1$)
-	\item[Sink Nodes]  Represent dependent variables and have only incoming branches. ($x_8$)
-	\item[Mixed Nodes]  Have both incoming and outgoing branches. ($x_2 \to x_7$)
+	\item[Path Gain]  Product of branch gains encountered in a path. ($P_3:\ A_{72}$)
+	\item[Loop Gain]  Product of the branch gains of the loop. ($L_3:\ A_{54}A_{45}$)
 \end{description}
 
-\section[Block to Flow-graph]{Block Diagram to Signal Flow Graph}
+\section[Block to Flow-graph]{Block Diagram to Signal Flow Graph\linkS{https://www.tutorialspoint.com/control_systems/control_systems_signal_flow_graphs.htm}}
 \labsec{sec3.3}
 
-\blindtext
+\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth]{lec3/Motor Block Diagram}
+			\caption{Motor block diagram.}
+\end{figure}
+
+\textbf{Step 1}\ \  Represent all the signals, variables,
+summing points and take-off points of block diagram as nodes in signal flow graph.\\
+\textbf{Step 2}\ \  Represent the blocks of block diagram as branches in signal flow graph.\\
+\textbf{Step 3}\ \  Represent the transfer functions inside the blocks of block diagram as 
+gains of the branches in signal flow graph.\sidenote[][]{Connect the nodes as per the block diagram.
+If there is connection between two nodes (but there is no block in between),
+then represent the gain of the branch as one.}\\[+2em]
+
+\begin{figure}[h]
+			\raggedleft
+			\includegraphics[width=0.7\textwidth]{lec3/Motor Flow Graph}
+			\caption{Motor flow-graph diagram.}
+\end{figure}
 
 \section[Flow-graph Algebra]{Flow-graph Algebra\linkT{Reference: Feedback control system analysis and synthesis}}
 \labsec{sec3.3}
@@ -79,4 +115,3 @@
 \labsec{sec3.4}
 
 \blindtext
-
