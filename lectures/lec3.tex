@@ -180,13 +180,20 @@ On the other hand, Mason's rule for reducing a signal-flow graph to a single tra
 
 
 \subsection[Graph determinant]{Graph determinant $\Delta$}
-\blindtext
+
+$\boldsymbol{\Delta} = 1-($ sum of all individual loop gains $)+($ sum of the products of the gains of all
+possible two loops that do not touch each other $)\ -$ \ldots and so forth with sums of higher
+number of non-touching loop gains.
+
+\justify
+$\boldsymbol{\Delta_i} =$ value of $\Delta$ for the part of the flow graph that does not touch the $i^{th}$ forward path.
+\sidenote{$\Delta_i = 1$ if there are no non-touching loops to the $i^{th}$ path.}
+
 
 
 \subsection{Systematic approach}
 
 \begin{marginfigure}
-		\raggedleft
 		\includegraphics{lec3/Mason Example}
 		\caption{Mason rule example.}
 \end{marginfigure}
@@ -200,16 +207,87 @@ On the other hand, Mason's rule for reducing a signal-flow graph to a single tra
 \end{description}
 
 \subsubsection{Step 1}
-\blindtext
+\begin{tabular}{>{\small\centering\arraybackslash}m{5.35cm}>{\small\centering\arraybackslash}m{5.35cm}}
+	\includegraphics[width=4cm]{lec3/Mason Example - Path1} & \includegraphics[width=4cm]{lec3/Mason Example - Path2}\\
+	&\\[-2mm]
+	$P_1 = G_1G_2G_3G_4$ & $P_2 = G_5G_6G_7G_8$ \\
+\end{tabular}
+
 
 \subsubsection{Step 2}
-\blindtext
+
+\begin{marginfigure}
+		\includegraphics{lec3/Mason Example - Loops Colored}
+		\caption{Loops considered.}
+\end{marginfigure}
+
+\hspace{1.05cm}
+\begin{tabular}{| c |}
+			\hline
+	        \multicolumn{1}{c}{}\\[-1em]
+	        $L_1=G_2H_2$ \\
+	        $L_2=G_3H_3$ \\
+	        $L_3=G_6H_6$ \\
+	        $L_4=G_7H_7$ \\
+	        \multicolumn{1}{c}{}\\[-1em]
+	        \hline
+\end{tabular}
+
 
 \subsubsection{Step 3}
-\blindtext
+\raggedright
+\begin{tabular}{r r}
+	\multicolumn{1}{l}{\textbf{Two at a time}} & \multicolumn{1}{l}{\ \ \ \ \ \textbf{Three at a time}} \\
+	\raggedright
+	\begin{tabular}{| c |}
+	        \multicolumn{1}{c}{}\\[-1em]
+	        $L_1L_3$ \\
+	        $L_1L_4$ \\
+	        $L_2L_3$ \\
+	        $L_2L_4$ \\
+	        \multicolumn{1}{c}{}\\[-1em]
+	\end{tabular}&\ldots\\
+\end{tabular}
+
 
 \subsubsection{Step 4}
-\blindtext
+
+\begin{tabular}{l l l}
+		$\boldsymbol{\Delta}$ & $=$ & $1-(L_1+L_2+L_3+L_4 )+(L_1 L_3+L_1 L_4+L_2 L_3+L_2 L_4 )$\\[+1em]
+		$\boldsymbol{\Delta}$ & $=$ & $1-(G_2H_2+H_3G_3+G_6H_6+G_7H_7)$\\
+		&& $\ \ \ +\ (G_2H_2G_6H_6+G_2H_2G_7H_7+H_3G_3G_6H_6+H_3G_3G_7H_7)$\\
+\end{tabular}
+
 
 \subsubsection{Step 5}
-\blindtext
+
+\begin{marginfigure}
+		\includegraphics{lec3/Mason Example - Path1 - Eliminated}
+		\caption{$P_1$ eliminated.}
+\end{marginfigure}
+
+\textit{Eliminate forward path-1:}\\[+1em]
+\begin{tabular}{l l l}
+		$\boldsymbol{\Delta_1}$ & $=$ & $1-(L_3+L_4)$\\[+1em]
+		$\boldsymbol{\Delta_1}$ & $=$ & $1-(G_6H_6+G_7H_7)$\\
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{marginfigure}
+		\includegraphics{lec3/Mason Example - Path2 - Eliminated}
+		\caption{$P_2$ eliminated.}
+\end{marginfigure}
+
+\textit{Eliminate forward path-2:}\\[+1em]
+\begin{tabular}{l l l}
+		$\boldsymbol{\Delta_2}$ & $=$ & $1-(L_1+L_2)$\\[+1em]
+		$\boldsymbol{\Delta_2}$ & $=$ & $1-(G_2H_2+H_3G_3)$\\
+\end{tabular}
+
+
+\subsubsection{Applying Mason's rule}
+\begin{tabular}{l l l}
+		$\dfrac{\boldsymbol{C(s)}}{\boldsymbol{R(s)}}$ & $=$ & $\dfrac{P_1\Delta_1+P_2\Delta_2}{\Delta}$\\[+1em]
+		$\dfrac{\boldsymbol{C(s)}}{\boldsymbol{R(s)}}$ & $=$ & $\dfrac{G_1G_2G_3G_4\ [1-(G_6H_6+G_7H_7)]+G_5G_6G_7G_8\ [1-(G_2H_2+H_3G_3)]}{1-(G_2H_2+H_3G_3+G_6H_6+G_7H_7)+(G_2H_2G_6H_6+G_2H_2G_7H_7+H_3G_3G_6H_6+H_3G_3G_7H_7)}$\\
+\end{tabular}
