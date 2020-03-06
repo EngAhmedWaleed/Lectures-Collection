@@ -12,6 +12,7 @@
 	\caption{Signal flow general graph.}
 \end{figure}
 
+\vspace{-1.25mm}
 \subsection[Nodes]{Nodes\linkT{Reference: Feedback control system analysis and synthesis}}
 
 \begin{description}
@@ -20,6 +21,7 @@
 	\item[Mixed Nodes]  Have both incoming and outgoing branches. ($x_2 \to x_7$)
 \end{description}
 
+\vspace{-1.25mm}
 \subsection[Paths]{Paths\linkS{http://imtiazhussainkalwar.weebly.com/feedback-control-systems-modeling-and-analysis.html}}
 
 % [+0.42cm] is needed to allign with graphs that is not in margin, so -0.42 is good to allign with text.
@@ -42,7 +44,7 @@
 		\end{figure}
 	
 	\item[Self loop]  A feedback loop consisting of a single branch.
-		\begin{figure}[h]
+		\begin{figure}[!h]
 			\raggedleft
 			\includegraphics[width=\marginratio\textwidth]{lec3/A loop}
 		\end{figure}
@@ -109,9 +111,105 @@ then represent the gain of the branch as one.}\\[+2em]
 \section[Flow-graph Algebra]{Flow-graph Algebra\linkT{Reference: Feedback control system analysis and synthesis}}
 \labsec{sec3.3}
 
-\blindtext
+%457		601		463
+%601		601		463
 
-\section{The Mason Rule}
+%0.4 -> 601
+%0.30416 -> 457
+%0.30815 -> 463
+
+%0.4	 -> 0.32
+%0.30416 -> 0.24333
+%0.30815 -> 0.24652
+
+\begin{table}[!h]
+	\begin{tabular}{>{\centering\arraybackslash}m{3.5cm} | >{\centering\arraybackslash}m{3.5cm} | >{\centering\arraybackslash}m{3.5cm}}
+	       \small $Series\ Paths$ &\small $Parallel\ Paths$ &\small $Node\ Absoption$\\[+1mm]
+	       \includegraphics[width=0.24333\textwidth]{lec3/Flow-Graph Algebra - 1}&
+	       \includegraphics[width=0.32\textwidth]{lec3/Flow-Graph Algebra - 3}&
+	       \includegraphics[width=0.24652\textwidth]{lec3/Flow-Graph Algebra - 5}\\
+	       \includegraphics[width=0.32\textwidth]{lec3/Flow-Graph Algebra - 2}&
+	       \includegraphics[width=0.32\textwidth]{lec3/Flow-Graph Algebra - 4}&
+	       \includegraphics[width=0.24652\textwidth]{lec3/Flow-Graph Algebra - 6}\\
+	\end{tabular}
+	\caption{Simplification rules.}
+\end{table}
+
+\justify
+\subsection{Feedback paths}
+
+\begin{marginfigure}[-0.4233401538135892cm]
+		\includegraphics{lec3/Feedback Flow-Graph}
+		\caption{Reduction of a feedback path.}
+		\labfig{feedbackGraph}
+\end{marginfigure}
+
+The equations for the feedback system of \reffig{feedbackGraph} are:\\
+\begin{tabular}{p{8cm}p{2cm}}
+	&$C=GE$\\
+	&$E=R-HC$\\
+\end{tabular}
+\\
+\begin{description}
+	\item[Step 1]  The node $E$ can be eliminated to produce a graph with a self-loop.\\[+2.65em]
+	\item[Step 2]  The final simplification is to elminate the self-loop to produce the over-all trasmittance.
+\end{description}
+
+
+\section[The Mason Rule]{The Mason Rule\linkS{http://imtiazhussainkalwar.weebly.com/feedback-control-systems-modeling-and-analysis.html}}
 \labsec{sec3.4}
 
+The block diagram reduction technique requires successive application of fundamental relationships in order to arrive at the system transfer function.
+On the other hand, Mason's rule for reducing a signal-flow graph to a single transfer function requires the application of one formula.
+
+
+\hspace*{\fill}
+\fbox{
+	    \parbox{3.5cm}{
+	    \large $\dfrac{C(s)}{R(s)}=\dfrac{1}{\Delta}\cdot \displaystyle{\sum_{i=1}^n}\ P_i\ \Delta_i$
+    	}
+    	\marginnote{
+    		\begin{tabular}{ll}
+				$\boldsymbol{n}$		&  Number of forward paths.\\
+				$\boldsymbol{P_i}$		&  The $i^{th}$ forward path gain.\\
+				$\boldsymbol{\Delta}$ 	&  Determinant of the system.\\
+				$\boldsymbol{\Delta_i}$ &  Determinant of the $i^{th}$ forward path.\\
+    		\end{tabular}
+    	}
+}
+
+
+\subsection[Graph determinant]{Graph determinant $\Delta$}
+\blindtext
+
+
+\subsection{Systematic approach}
+
+\begin{marginfigure}
+		\raggedleft
+		\includegraphics{lec3/Mason Example}
+		\caption{Mason rule example.}
+\end{marginfigure}
+
+\begin{description}
+	\item[Step 1]  Calculate forward path gain $P_i$ for each $i$ forward path.
+	\item[Step 2]  Calculate all loops transfer functions.
+	\item[Step 3]  Consider non-touching loops 2 at a time, 3 at a time, \ldots etc.
+	\item[Step 4]  Calculate $\Delta$ from steps 2 and 3.
+	\item[Step 5]  Calculate $\Delta_i$ as portion of $\Delta$ not touching $i$ forward path.
+\end{description}
+
+\subsubsection{Step 1}
+\blindtext
+
+\subsubsection{Step 2}
+\blindtext
+
+\subsubsection{Step 3}
+\blindtext
+
+\subsubsection{Step 4}
+\blindtext
+
+\subsubsection{Step 5}
 \blindtext
