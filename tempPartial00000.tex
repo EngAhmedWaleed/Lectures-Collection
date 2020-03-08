@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% kaobook
+% LaTeX Template
+% Version 1.2 (4/1/2020)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% For the latest template development version and to make contributions:
+% https://github.com/fmarotta/kaobook
+%
+% Authors:
+% Federico Marotta (federicomarotta@mail.com)
+% Based on the doctoral thesis of Ken Arroyo Ohori (https://3d.bk.tudelft.nl/ken/en)
+% and on the Tufte-LaTeX class.
+% Modified for LaTeX Templates by Vel (vel@latextemplates.com)
+%
+% License:
+% CC0 1.0 Universal (see included MANIFEST.md file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	fontsize=10pt, % Base font size
+	twoside=false, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
+	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
+	%chapterprefix=true, % Uncomment to use the word "Chapter" before chapter numbers everywhere they appear
+	%chapterentrydots=true, % Uncomment to output dots from the chapter name to the page number in the table of contents
+	numbers=noenddot, % Comment to output dots after chapter numbers; the most common values for this option are: enddot, noenddot and auto (see the KOMAScript documentation for an in-depth explanation)
+	%draft=true, % If uncommented, rulers will be added in the header and footer
+	%overfullrule=true, % If uncommented, overly long lines will be marked by a black box; useful for correcting spacing problems
+]{kaobook}
+
+% Set the language
+\usepackage[english]{babel} % Load characters and hyphenation
+\usepackage[english=british]{csquotes} % English quotes
+
+% Load packages for testing
+\usepackage{blindtext}
+%\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
+%\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
+
+% provides commands for Pi fonts (Dingbats, Symbol, .. etc)
+\usepackage{pifont} 
+
+% https://tex.stackexchange.com/questions/12761/how-to-specify-a-fixed-height-for-all-rows-in-a-table
+\usepackage{array}
+
+% Load the bibliography package
+\usepackage{styles/kaobiblio}
+\addbibresource{main.bib} % Bibliography file
+
+% Load mathematical packages for theorems and related environments. NOTE: choose only one between 'mdftheorems' and 'plaintheorems'.
+\usepackage{styles/mdftheorems}
+%\usepackage{styles/plaintheorems}
+
+\graphicspath{{images/}} % Paths in which to look for images
+
+\makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
+
+\makeglossaries % Make LaTeX produce the files required to compile the glossary
+
+\makenomenclature % Make LaTeX produce the files required to compile the nomenclature
+
+% Reset sidenote counter at chapters
+%\counterwithin*{sidenote}{chapter}
+
+% https://tex.stackexchange.com/questions/784/how-to-change-the-line-spacing-in-my-list-of-figures
+%\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+%\addtocontents{lof}{\protect\noaddvspace}
+%\addtocontents{lot}{\protect\noaddvspace}
+
+% Link copyrighted materials
+\newcommand{\linkC}[1]{
+	\scriptsize \href{#1}{\copyright}
+}
+% Link sources of materials
+\newcommand{\linkS}[1]{
+	\scriptsize \href{#1}{\ding{242}}
+}
+
+\newcommand{\note}[1]{
+	\scriptsize{\hspace*{\fill} (#1)} \normalsize
+}
+
+\input{resources/tooltip (tex.stackexchange.com).tex} 
+\newcommand{\linkT}[1]{
+	\small \tooltip{\ding{41}}{#1}
+}
+
+% https://latex.org/forum/viewtopic.php?t=2712
+% Normal : 304.44447pt (\the\textwidth)
+% Margin : 140.5566 pt (\the\textwidth)
+\newcommand{\marginratio}{0.4616822240193754}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\input{lectures/lec4}
+\bibliography{main}
+
+\end{document}
