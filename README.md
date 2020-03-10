@@ -1,6 +1,6 @@
 # Suspended Project ...
 
-Could not match the amount of content.
+Could not keep up with the amount of content.
 
 > **HAD TO SAY:**
 > It is practically a big lie that LaTeX makes you focus on the content without
