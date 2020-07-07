@@ -57,14 +57,14 @@
 \begin{tabular}{r r r}
 	\multicolumn{1}{l}{\textbf{Two at a time}} & \multicolumn{1}{l}{\ \ \ \ \ \textbf{Three at a time}} & \multicolumn{1}{l}{\ \ \ \ \ \textbf{Four at a time}} \\
 	\raggedright
-	\begin{tabular}{| c | c | c |}
-	        \multicolumn{3}{c}{}\\[-1em]
-	        $L_1L_3$ & $L_2L_4$ & $L_3L_6$ \\
-	        $L_1L_4$ & $L_2L_5$ & $L_4L_6$ \\
-	        $L_1L_5$ & $L_2L_6$ & $L_4L_7$ \\
-	        $L_1L_6$ & $L_2L_8$ & $L_5L_7$ \\
-	        $L_1L_8$ & $L_3L_5$ & $L_7L_8$ \\
-	        \multicolumn{3}{c}{}\\[-1em]
+	\begin{tabular}{| c | c | c | c |}
+	        \multicolumn{4}{c}{}\\[-1em]
+	        $L_1L_3$ & $L_2L_4$ & $L_3L_6$ & $L_7L_8$\\
+	        $L_1L_4$ & $L_2L_5$ & $L_4L_6$ &\\
+	        $L_1L_5$ & $L_2L_6$ & $L_4L_7$ &\\
+	        $L_1L_6$ & $L_2L_8$ & $L_5L_7$ &\\
+	        $L_1L_8$ & $L_3L_5$ & $L_6L_7$ &\\
+	        \multicolumn{4}{c}{}\\[-1em]
 	\end{tabular}&
 	\raggedright
 	\begin{tabular}{|c|}
@@ -73,7 +73,7 @@
 			$L_1L_3L_6$ \\
 			$L_1L_4L_6$ \\
 			$L_2L_4L_6$ \\
-			$ $ \\
+			$L_4L_6L_7$ \\
 	        \multicolumn{1}{c}{}\\[-1em]
 	\end{tabular}&\ldots\\
 \end{tabular}
@@ -121,7 +121,7 @@ then represent the gain of the branch as one.}\\[+2em]
 %0.4	 -> 0.32
 %0.30416 -> 0.24333
 %0.30815 -> 0.24652
-
+\vspace{-0.01cm}
 \begin{table}[!h]
 	\begin{tabular}{>{\centering\arraybackslash}m{3.5cm} | >{\centering\arraybackslash}m{3.5cm} | >{\centering\arraybackslash}m{3.5cm}}
 	       \small $Series\ Paths$ &\small $Parallel\ Paths$ &\small $Node\ Absorption$\\[+1mm]
@@ -135,6 +135,7 @@ then represent the gain of the branch as one.}\\[+2em]
 	\caption{Simplification rules.}
 \end{table}
 
+\pagebreak
 \justify
 \subsection{Feedback paths}
 
